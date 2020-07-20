@@ -181,11 +181,10 @@ header {
 }
 
 .slider-arrows{
-    width: 715px;
     height: 50px;
     position: absolute;
     bottom: 109px;
-    border-bottom: #ffb400 1px solid;
+    left: 41px;
 
     .slide-button {
         width: 50px;
@@ -194,12 +193,16 @@ header {
         border: none;
         background-color: #ffb400;
         margin: 1px;
+        color: white;
     }
 }
 
-.container{
-    flex-direction: row;
-    height: 358px;
+.slider-arrows-line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffb400;
+    bottom: 109px;
 }
 
 .current-slide {
@@ -257,7 +260,6 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
 
     .current-news-date-day{
         width: 38px;
@@ -277,64 +279,96 @@ header {
         color: #ffffff;
     }
 }
+}
 
-.news{
+.slider-news{
     width: 372px;
-    background-color: #2d2d2d;
+    background-color: #2d2d2d; 
 
-    .news-list{
+    .slider-news-list{
         flex-direction: column;
         justify-content: space-around;
         width: 322px;
         height: 358px;
         margin: auto;
+        }
 
-            .news-preview{
-                border-bottom: 1px solid #3b3b3b;;
-                height: 90px;
-                align-items: center;
-                flex-direction: row;
+    .slider-news-preview{
+        border-bottom: 1px solid #3b3b3b;
+        height: 90px;
+        align-items: center;
+        flex-direction: row;
 
-                .news-preview-picture {
-                    width: 137px;
-                    height: 45px;
-                    
-                    .news-preview-pic{
-                        background-color: #1e1e1e;
-                    }
-                }
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        .news-preview-picture {
+            width: 137px;
+            height: 45px;
             
-                .news-prev-item{
-                    height: 45px;
-                    padding-left: 20px;  
-                
-
-                    .news-header-selected {
-                        text-transform: uppercase;
-                        font-family: TitilliumText25L-600wt;
-                        font-size: 12px;
-                        line-height: 1.5;
-                        letter-spacing: -0.3px;
-                        text-align: left;
-                        color: #ffb400;
-                    }
-
-                    .news-header {
-                        text-transform: uppercase;
-                        font-family: TitilliumText25L-600wt;
-                        font-size: 12px;
-                        line-height: 1.5;
-                        letter-spacing: -0.3px;
-                        text-align: left;
-                        color: #ffffff;
-                    }
-
-                    .news-comments, .news-date {
-                        font-size: 11px;
-                        letter-spacing: -0.28px;
-                        color: #626262;
-                    }
-                } 
+            .news-preview-pic{
+                background-color: #1e1e1e;
             }
         }
-    }  
+    
+        .news-prev-item{
+            height: 45px;
+            padding-left: 20px;
+        }                                                         
+
+            .news-header-selected {
+                text-transform: uppercase;
+                font-family: TitilliumText25L-600wt;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: -0.3px;
+                text-align: left;
+                color: #ffb400;
+            }
+
+            .news-header {
+                text-transform: uppercase;
+                font-family: TitilliumText25L-600wt;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: -0.3px;
+                text-align: left;
+                color:pink;
+            }
+
+            .news-comments, .news-date {
+                font-size: 11px;
+                letter-spacing: -0.28px;
+                color: #626262;
+            }
+    }
+}
+
+.hot-news-list {
+    flex-direction: column;
+}
+
+.news-preview {
+    border-bottom: 1px solid #3b3b3b;
+    height: 90px;
+    align-items: center;
+    flex-direction: row;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    .news-header {
+        text-transform: uppercase;
+        font-family: TitilliumText25L-600wt;
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: -0.45px;
+        text-align: left;
+        color: #525252;
+        padding-top: 20px;
+        padding-left: 14px;
+    }   
+    
+}
