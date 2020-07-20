@@ -182,28 +182,43 @@ header .search-icon {
   top: 90px;
 }
 
-.current-slide-pic {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 358px;
 }
 
-.current-slide {
-  position: absolute;
+.container .current-slide {
+  position: relative;
   width: 715px;
   height: 357px;
 }
 
-.current-news-info {
+.container .current-slide .current-slide-pic {
   position: relative;
-  background-color: #292929;
-  width: 614px;
-  height: 99px;
-  opacity: 0.9;
-  top: 258px;
+  width: 100%;
+  height: 100%;
 }
 
-.current-news-header {
+.container .current-slide .current-slide-item {
+  position: absolute;
+  bottom: 0px;
+}
+
+.container .current-slide .current-news-info {
+  position: relative;
+  background-color: #292929;
+  height: 99px;
+  opacity: 0.9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .current-slide .current-news-info .current-news-header {
   text-transform: uppercase;
   font-family: TitilliumText25L-600wt;
   font-size: 18px;
@@ -215,7 +230,7 @@ header .search-icon {
   padding-left: 14px;
 }
 
-.current-news-description {
+.container .current-slide .current-news-info .current-news-description {
   font-family: TitilliumText25L-400wt;
   font-size: 12px;
   line-height: 1.5;
@@ -226,11 +241,108 @@ header .search-icon {
   padding-left: 14px;
 }
 
-.current-news-date {
+.container .current-slide .current-news-date {
   position: relative;
   width: 101px;
   height: 99px;
   opacity: 0.9;
   background-color: #ffb400;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .current-slide .current-news-date-day {
+  width: 38px;
+  height: 43px;
+  font-family: BebasNeue;
+  font-size: 40px;
+  letter-spacing: -1.48px;
+  color: #ffffff;
+}
+
+.container .current-slide .current-news-date-month {
+  width: 30px;
+  height: 9px;
+  font-family: TitilliumText25L-999wt;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+.container .news {
+  width: 372px;
+  background-color: #2d2d2d;
+}
+
+.container .news-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 322px;
+  height: 358px;
+  margin: auto;
+}
+
+.container .news-list .news-preview {
+  border-bottom: 1px solid green;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .news-list .news-preview .news-preview-picture {
+  width: 137px;
+  height: 45px;
+}
+
+.container .news-list .news-preview .news-preview-picture .news-preview-pic {
+  background-color: #1e1e1e;
+}
+
+.container .news-list .news-preview .news-prev-item {
+  height: 45px;
+  padding-left: 20px;
+}
+
+.container .news-list .news-preview .news-prev-item .news-header-selected {
+  text-transform: uppercase;
+  font-family: TitilliumText25L-600wt;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ffb400;
+}
+
+.container .news-list .news-preview .news-prev-item .news-header {
+  text-transform: uppercase;
+  font-family: TitilliumText25L-600wt;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.container .news-list .news-preview .news-prev-item .news-comments, .container .news-list .news-preview .news-prev-item .news-date {
+  font-size: 11px;
+  letter-spacing: -0.28px;
+  color: #626262;
 }
 /*# sourceMappingURL=main-page.css.map */
