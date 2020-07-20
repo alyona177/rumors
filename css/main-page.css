@@ -182,6 +182,23 @@ header .search-icon {
   top: 90px;
 }
 
+.slider-arrows {
+  width: 715px;
+  height: 50px;
+  position: absolute;
+  bottom: 109px;
+  border-bottom: #ffb400 1px solid;
+}
+
+.slider-arrows .slide-button {
+  width: 50px;
+  height: 48px;
+  opacity: 0.9;
+  border: none;
+  background-color: #ffb400;
+  margin: 1px;
+}
+
 .container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -190,24 +207,24 @@ header .search-icon {
   height: 358px;
 }
 
-.container .current-slide {
+.current-slide {
   position: relative;
   width: 715px;
   height: 357px;
 }
 
-.container .current-slide .current-slide-pic {
+.current-slide .current-slide-pic {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.container .current-slide .current-slide-item {
+.current-slide .current-slide-item {
   position: absolute;
   bottom: 0px;
 }
 
-.container .current-slide .current-news-info {
+.current-slide .current-news-info {
   position: relative;
   background-color: #292929;
   height: 99px;
@@ -218,7 +235,7 @@ header .search-icon {
           flex-direction: column;
 }
 
-.container .current-slide .current-news-info .current-news-header {
+.current-slide .current-news-info .current-news-header {
   text-transform: uppercase;
   font-family: TitilliumText25L-600wt;
   font-size: 18px;
@@ -230,7 +247,7 @@ header .search-icon {
   padding-left: 14px;
 }
 
-.container .current-slide .current-news-info .current-news-description {
+.current-slide .current-news-info .current-news-description {
   font-family: TitilliumText25L-400wt;
   font-size: 12px;
   line-height: 1.5;
@@ -241,10 +258,9 @@ header .search-icon {
   padding-left: 14px;
 }
 
-.container .current-slide .current-news-date {
+.current-slide .current-news-date {
   position: relative;
-  width: 101px;
-  height: 99px;
+  width: 100px;
   opacity: 0.9;
   background-color: #ffb400;
   -webkit-box-orient: vertical;
@@ -259,7 +275,7 @@ header .search-icon {
           align-items: center;
 }
 
-.container .current-slide .current-news-date-day {
+.current-slide .current-news-date-day {
   width: 38px;
   height: 43px;
   font-family: BebasNeue;
@@ -268,7 +284,7 @@ header .search-icon {
   color: #ffffff;
 }
 
-.container .current-slide .current-news-date-month {
+.current-slide .current-news-date-month {
   width: 30px;
   height: 9px;
   font-family: TitilliumText25L-999wt;
@@ -277,12 +293,12 @@ header .search-icon {
   color: #ffffff;
 }
 
-.container .news {
+.news {
   width: 372px;
   background-color: #2d2d2d;
 }
 
-.container .news-list {
+.news .news-list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -294,8 +310,8 @@ header .search-icon {
   margin: auto;
 }
 
-.container .news-list .news-preview {
-  border-bottom: 1px solid green;
+.news .news-list .news-preview {
+  border-bottom: 1px solid #3b3b3b;
   height: 90px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -306,21 +322,21 @@ header .search-icon {
           flex-direction: row;
 }
 
-.container .news-list .news-preview .news-preview-picture {
+.news .news-list .news-preview .news-preview-picture {
   width: 137px;
   height: 45px;
 }
 
-.container .news-list .news-preview .news-preview-picture .news-preview-pic {
+.news .news-list .news-preview .news-preview-picture .news-preview-pic {
   background-color: #1e1e1e;
 }
 
-.container .news-list .news-preview .news-prev-item {
+.news .news-list .news-preview .news-prev-item {
   height: 45px;
   padding-left: 20px;
 }
 
-.container .news-list .news-preview .news-prev-item .news-header-selected {
+.news .news-list .news-preview .news-prev-item .news-header-selected {
   text-transform: uppercase;
   font-family: TitilliumText25L-600wt;
   font-size: 12px;
@@ -330,7 +346,7 @@ header .search-icon {
   color: #ffb400;
 }
 
-.container .news-list .news-preview .news-prev-item .news-header {
+.news .news-list .news-preview .news-prev-item .news-header {
   text-transform: uppercase;
   font-family: TitilliumText25L-600wt;
   font-size: 12px;
@@ -340,7 +356,7 @@ header .search-icon {
   color: #ffffff;
 }
 
-.container .news-list .news-preview .news-prev-item .news-comments, .container .news-list .news-preview .news-prev-item .news-date {
+.news .news-list .news-preview .news-prev-item .news-comments, .news .news-list .news-preview .news-prev-item .news-date {
   font-size: 11px;
   letter-spacing: -0.28px;
   color: #626262;
