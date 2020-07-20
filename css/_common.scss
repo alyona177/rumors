@@ -48,6 +48,10 @@
 	display: flex;
 }
 
+.grid-container {
+    display: grid;
+}
+
 header {
     .container {
         position: relative;
@@ -78,7 +82,7 @@ header {
 
     .logo {
         text-align: center;
-        background-image: url(../img/logo-bg.png);
+        background-image: url(../img/header/logo-bg.png);
         background-size: cover;
         color:white;
         margin: 27px 10px 12px 0;
@@ -143,7 +147,7 @@ header {
 
     .e::after {
         content:"";
-        background-image:  url(../img/nav-hover-bg.png);
+        background-image:  url(../img/header/nav-hover-bg.png);
         position: absolute;
         width: 100%;
         top:0;
