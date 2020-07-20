@@ -8,10 +8,38 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="" alt="" class="logo">
-            <nav></nav>
-            <div class="search"></div>
+        <div class="container flex-container">
+            <div class="logo"> 
+                <div class="magazine-name">Rumors</div>
+                <div class="logo-text">News magazine</div>
+            </div>
+            <nav class="flex-container">
+                <div class="link-container">
+                     <a href="" class="nav-link e" target="_blank">World</a>
+                </div>
+                <div class="link-container">
+                    <a href="" class="nav-link" target="_blank">Business</a>
+               </div>
+               <div class="link-container">
+                <a href="" class="nav-link e" target="_blank">Entertainment</a>
+                </div>
+                <div class="link-container">
+                    <a href="" class="nav-link" target="_blank">Sports</a>
+                </div>
+                <div class="link-container">
+                    <a href="" class="nav-link" target="_blank">Science</a>
+                </div>
+                <div class="link-container">
+                    <a href="" class="nav-link" target="_blank">Health</a>
+                </div>
+                <div class="link-container">
+                    <a href="" class="nav-link" target="_blank">Spotlight</a>
+                </div>
+            </nav>
+            <div class="search">
+                <input type="text" class="search-field" placeholder="Search rumors...">
+                <img src="./img/header/search-icon.png" class="search-icon" alt="">
+            </div>
         </div>
     </header>
     <section class="news-slider">
@@ -49,9 +77,9 @@
             </div>
         </div>
     </section>
-    <section class="left-column">
-        <div class="container">
-            <div class="top-part">
+    <div class="container flex-container">
+        <section class="left-column">
+            <div class="top-part grid-container">
                 <div class="hot-news">
                     <div class="news-section-header"></div>
                     <div class="flex-container">
@@ -111,10 +139,19 @@
                     </div>
                 </div>
                 <div class="entertainment">
-                    <div class="news-section-header"></div>
-                    <div class="flex-container">
+                    <div class="news-section-header">Entertainment</div>
+                    <div class="flex-sontainer">
                         <div class="opened-news">
-                            <img src="" alt="" class="news-pic">
+                            <div class="img-with-stars">
+                                <img src="./img/entertainment/hangover-trilogy.jpg" alt="hangover-part3" class="news-pic">
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                             <div class="news-score"></div>
                             <div class="news-header"></div>
                             <div class="news-date"></div>
@@ -185,110 +222,110 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="right-column">
-        <div class="be-social">
-            <div class="news-section-header"></div>
-            <div class="flex-container">
-                <div class="social-net">
-                    <div class="icon"></div>
-                    <div class="fans">
-                        <span class="count-fans"></span>
-                        <span class="social-net-text"></span>
+        </section>
+        <section class="right-column">
+            <div class="be-social">
+                <div class="news-section-header"></div>
+                <div class="flex-container">
+                    <div class="social-net">
+                        <div class="icon"></div>
+                        <div class="fans">
+                            <span class="count-fans"></span>
+                            <span class="social-net-text"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="social-net">
-                    <div class="icon"></div>
-                    <div class="fans">
-                        <span class="count-fans"></span>
-                        <span class="social-net-text"></span>
+                    <div class="social-net">
+                        <div class="icon"></div>
+                        <div class="fans">
+                            <span class="count-fans"></span>
+                            <span class="social-net-text"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="social-net">
-                    <div class="icon"></div>
-                    <div class="fans">
-                        <span class="count-fans"></span>
-                        <span class="social-net-text"></span>
+                    <div class="social-net">
+                        <div class="icon"></div>
+                        <div class="fans">
+                            <span class="count-fans"></span>
+                            <span class="social-net-text"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ads">
-            <div class="news-section-header"></div>
-            <img src="" alt="" class="ads-banner">
-        </div>
-        <div class="tags">
-            <div class="news-section-header"></div>
-            <div class="flex-container">
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
+            <div class="ads">
+                <div class="news-section-header"></div>
+                <img src="" alt="" class="ads-banner">
             </div>
-        </div>
-        <div class="sorted-news-list">
-            <div class="flex-container">
-                <div class="sort-attributes">
-                    <div class="news-section-header"></div>
-                    <div class="news-section-header"></div>
-                    <div class="news-section-header"></div>
-                </div>
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <div class="news-info">
-                        <span class="news-date"></span>
-                        <span class="news-section"></span>
-                        <span class="news-comments"></span>
-                    </div>
-                    <div class="news-score"></div>
-                </div>
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <div class="news-info">
-                        <span class="news-date"></span>
-                        <span class="news-section"></span>
-                        <span class="news-comments"></span>
-                    </div>
-                    <div class="news-score"></div>
-                </div>
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <div class="news-info">
-                        <span class="news-date"></span>
-                        <span class="news-section"></span>
-                        <span class="news-comments"></span>
-                    </div>
-                    <div class="news-score"></div>
-                </div>
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <div class="news-info">
-                        <span class="news-date"></span>
-                        <span class="news-section"></span>
-                        <span class="news-comments"></span>
-                    </div>
-                    <div class="news-score"></div>
+            <div class="tags">
+                <div class="news-section-header"></div>
+                <div class="flex-container">
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
+                    <div class="tag"></div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="sorted-news-list">
+                <div class="flex-container">
+                    <div class="sort-attributes">
+                        <div class="news-section-header"></div>
+                        <div class="news-section-header"></div>
+                        <div class="news-section-header"></div>
+                    </div>
+                    <div class="news-preview">
+                        <div class="news-header"></div>
+                        <div class="news-info">
+                            <span class="news-date"></span>
+                            <span class="news-section"></span>
+                            <span class="news-comments"></span>
+                        </div>
+                        <div class="news-score"></div>
+                    </div>
+                    <div class="news-preview">
+                        <div class="news-header"></div>
+                        <div class="news-info">
+                            <span class="news-date"></span>
+                            <span class="news-section"></span>
+                            <span class="news-comments"></span>
+                        </div>
+                        <div class="news-score"></div>
+                    </div>
+                    <div class="news-preview">
+                        <div class="news-header"></div>
+                        <div class="news-info">
+                            <span class="news-date"></span>
+                            <span class="news-section"></span>
+                            <span class="news-comments"></span>
+                        </div>
+                        <div class="news-score"></div>
+                    </div>
+                    <div class="news-preview">
+                        <div class="news-header"></div>
+                        <div class="news-info">
+                            <span class="news-date"></span>
+                            <span class="news-section"></span>
+                            <span class="news-comments"></span>
+                        </div>
+                        <div class="news-score"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <footer>
         <div class="container">
             <img src="" alt="" class="logo">
