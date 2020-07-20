@@ -39,6 +39,203 @@
     font-weight: 700;
     font-style: normal;
 }
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.grid-container {
+    display: grid;
+}
+
+header {
+    .container {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 27px;
+            width: 1px;
+            background-color: #ffb400;
+            left: 5px;
+            top: 0px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: #ffb400;
+            bottom: 15px;
+        }
+    }
+
+    .flex-container {
+        justify-content: space-between;
+    }
+
+    .logo {
+        text-align: center;
+        background-image: url(../img/header/logo-bg.png);
+        background-size: cover;
+        color:white;
+        margin: 27px 10px 12px 0;
+    }
+
+    .magazine-name {
+        font-family: 'Bebas Neue';
+        font-size: 95px;
+        font-weight: 700;
+        letter-spacing: -4.75px;
+        text-transform: uppercase;
+        line-height: 69px;
+        margin: 22px 18px 12px;
+    }
+
+    .logo-text {
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 16px;
+        margin-bottom:16px;
+        position:relative;
+    }
+
+    .logo-text:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 53px;
+        background-color: #fffff0;
+        top:8px;
+        left:13px;
+    }
+
+    .logo-text:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 53px;
+        background-color: #fffff0;
+        top:8px;
+        right: 13px;
+    }
+
+    .link-container {
+        padding: 103px 14px 0px 14px;
+        position: relative;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #444444;
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        line-height: 11px;
+        font-size: 15px;
+        letter-spacing:-0.38px;
+    }
+
+    .e::after {
+        content:"";
+        background-image:  url(../img/header/nav-hover-bg.png);
+        position: absolute;
+        width: 100%;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: -1;
+    }
+    .search {
+        padding: 90px 10px 0px 10px;
+        position: relative;
+    }
+
+    .search-field {
+        width: 160px;
+        height: 41px;
+        font-family: 'Titillium Web';
+        font-size: 12px;
+        padding: 17px 0 15px 13px;
+        background: rgb(240,240,240);
+        border:none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .search-icon {
+        position: absolute;
+        right:10px;
+        top:90px;
+    }
+
+}
+
+
+
+.current-slide-pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.current-slide {
+    position: absolute;
+    width: 715px;
+    height: 357px;
+}
+
+.current-news-info{
+    position: relative;
+    background-color:#292929;
+    width: 614px;
+    height: 99px;
+    opacity: 0.9;
+    top: 258px;
+
+    .current-news-header{
+        text-transform: uppercase;
+        font-family: TitilliumText25L-600wt;
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: -0.45px;
+        text-align: left;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-left: 14px;
+    }
+
+    .current-news-description{
+        font-family: TitilliumText25L-400wt;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: -0.3px;
+        text-align: left;
+        color: #ffffff;
+        padding-top: 18px;
+        padding-left: 14px;
+    }
+    
+}
+
 
 .container {
     max-width: 1088px;
