@@ -4,6 +4,13 @@
     flex-shrink:0;
 }
 
+.right-column {
+    margin-left: 20px;
+    width: 350px;
+    flex-shrink:0;
+    border: 1px solid black;
+}
+
 .top-part {
     grid-template: 1fr 1fr  / 1fr 1fr;
     grid-column-gap: 30px;
