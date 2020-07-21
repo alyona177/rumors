@@ -101,10 +101,6 @@ header .magazine-name {
   text-transform: uppercase;
   line-height: 69px;
   margin: 22px 18px 12px;
-.current-slide-pic {
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 
 header .logo-text {
@@ -189,6 +185,50 @@ header .search-icon {
   position: absolute;
   right: 10px;
   top: 90px;
+}
+
+.current-slide-pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.current-slide {
+  position: absolute;
+  width: 715px;
+  height: 357px;
+}
+
+.current-news-info {
+  position: relative;
+  background-color: #292929;
+  width: 614px;
+  height: 99px;
+  opacity: 0.9;
+  top: 258px;
+}
+
+.current-news-info .current-news-header {
+  text-transform: uppercase;
+  font-family: TitilliumText25L-600wt;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.45px;
+  text-align: left;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 14px;
+}
+
+.current-news-info .current-news-description {
+  font-family: TitilliumText25L-400wt;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ffffff;
+  padding-top: 18px;
+  padding-left: 14px;
 }
 
 .left-column {
@@ -329,43 +369,5 @@ header .search-icon {
 
 .entertainment .news-preview .rating, .business .news-preview .rating {
   margin-bottom: 5px;
-}
-
-.current-slide {
-  position: absolute;
-  width: 715px;
-  height: 357px;
-}
-
-.current-news-info {
-  position: relative;
-  background-color: #292929;
-  width: 614px;
-  height: 99px;
-  opacity: 0.9;
-  top: 258px;
-}
-
-.current-news-info .current-news-header {
-  text-transform: uppercase;
-  font-family: TitilliumText25L-600wt;
-  font-size: 18px;
-  line-height: 1;
-  letter-spacing: -0.45px;
-  text-align: left;
-  color: #ffffff;
-  padding-top: 20px;
-  padding-left: 14px;
-}
-
-.current-news-info .current-news-description {
-  font-family: TitilliumText25L-400wt;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: -0.3px;
-  text-align: left;
-  color: #ffffff;
-  padding-top: 18px;
-  padding-left: 14px;
 }
 /*# sourceMappingURL=main-page.css.map */
