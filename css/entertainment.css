@@ -91,6 +91,9 @@ header .logo {
   background-size: cover;
   color: white;
   margin: 27px 10px 12px 0;
+  padding: 18px 17px 18px 16px;
+  position: relative;
+  z-index: 0;
 }
 
 header .magazine-name {
@@ -100,7 +103,7 @@ header .magazine-name {
   letter-spacing: -4.75px;
   text-transform: uppercase;
   line-height: 69px;
-  margin: 22px 18px 12px;
+  margin-bottom: 10px;
 }
 
 header .logo-text {
@@ -110,28 +113,21 @@ header .logo-text {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
-  margin-bottom: 16px;
+  z-index: 1;
+  background-color: #ffb400;
+  padding: 0 8px;
+  display: inline-block;
   position: relative;
 }
 
-header .logo-text:before {
-  content: "";
+header .logo-line {
   position: absolute;
   height: 1px;
-  width: 53px;
-  background-color: #fffff0;
-  top: 8px;
-  left: 13px;
-}
-
-header .logo-text:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 53px;
-  background-color: #fffff0;
-  top: 8px;
-  right: 13px;
+  bottom: 25px;
+  background-color: white;
+  right: 15px;
+  left: 15px;
+  bottom: 28px;
 }
 
 header .link-container {
@@ -150,16 +146,35 @@ header .nav-link {
   letter-spacing: -0.38px;
 }
 
-header .e::after {
+header .current-section::after {
   content: "";
-  background-image: url(../img/header/nav-hover-bg.png);
+  background-color: #ffb400;
   position: absolute;
   width: 100%;
+  height: 98%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+header .current-section::before {
+  content: "";
+  background-color: #e4a40b;
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+header .current-section .nav-link {
+  color: white;
 }
 
 header .search {
@@ -370,4 +385,4 @@ header .search-icon {
 .entertainment .news-preview .rating, .business .news-preview .rating {
   margin-bottom: 5px;
 }
-/*# sourceMappingURL=main-page.css.map */
+/*# sourceMappingURL=entertainment.css.map */
