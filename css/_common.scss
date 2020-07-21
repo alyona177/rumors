@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Titillium Web';
     src: local('Titillium Web'), local('TitilliumWeb-Regular'), url('../fonts/titilliumweb.woff2') format('woff2'), url('../fonts/titilliumweb.woff') format('woff'), url('../fonts/titilliumweb.ttf') format('truetype');
@@ -48,6 +42,7 @@
 .container {
     max-width: 1088px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .flex-container {
@@ -189,63 +184,6 @@ header {
 
 }
 
-
-
-.current-slide-pic {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.current-slide {
-    position: absolute;
-    width: 715px;
-    height: 357px;
-}
-
-.current-news-info{
-    position: relative;
-    background-color:#292929;
-    width: 614px;
-    height: 99px;
-    opacity: 0.9;
-    top: 258px;
-
-    .current-news-header{
-        text-transform: uppercase;
-        font-family: TitilliumText25L-600wt;
-        font-size: 18px;
-        line-height: 1;
-        letter-spacing: -0.45px;
-        text-align: left;
-        color: #ffffff;
-        padding-top: 20px;
-        padding-left: 14px;
-    }
-
-    .current-news-description{
-        font-family: TitilliumText25L-400wt;
-        font-size: 12px;
-        line-height: 1.5;
-        letter-spacing: -0.3px;
-        text-align: left;
-        color: #ffffff;
-        padding-top: 18px;
-        padding-left: 14px;
-    }
-    
-}
-
-
-.container {
-    max-width: 1088px;
-    margin: 0 auto;
-}
-
-.flex-container {
-	display: flex;
-}
-
 header {
     .container {
         position: relative;
@@ -377,6 +315,15 @@ header {
 
 }
 
+.slider{
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+.top-slider {
+    width: 1088px;
+}
+
 .slider-arrows{
     height: 50px;
     position: absolute;
@@ -408,7 +355,6 @@ header {
     height: 357px;
 
     .current-slide-pic {
-        position: relative;
         width: 100%;
         height: 100%;
     }
@@ -419,11 +365,11 @@ header {
     }
 
     .current-news-info{
-        position: relative;
         background-color:#292929;
         height: 99px;
         opacity: 0.9;
         flex-direction: column;
+        width: 100%;
 
         .current-news-header{
             text-transform: uppercase;
@@ -531,7 +477,7 @@ header {
                 line-height: 1.5;
                 letter-spacing: -0.3px;
                 text-align: left;
-                color:pink;
+                color: #ffffff;
             }
 
             .news-comments, .news-date {
@@ -542,30 +488,169 @@ header {
     }
 }
 
-.hot-news-list {
+.news-list {
     flex-direction: column;
 }
 
-.news-preview {
-    border-bottom: 1px solid #3b3b3b;
-    height: 90px;
-    align-items: center;
-    flex-direction: row;
+.news-column {
 
-    &:last-child {
-        border-bottom: 0;
+    .news-column-header {
+        position: relative;
+
+        .section-header-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #ffb400;
+            bottom: 0px;
+        }
+    }
+
+    .news-section-header {
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        letter-spacing: -1.5px;
+        color: #ffffff;
+        background-color: #ffb400;
+        display:inline-block;
+        padding: 10px;
+        line-height: 0.8;
     }
 
     .news-header {
+        font-family: 'Titillium Web';
+        font-weight: 600;
         text-transform: uppercase;
-        font-family: TitilliumText25L-600wt;
-        font-size: 18px;
-        line-height: 1;
-        letter-spacing: -0.45px;
-        text-align: left;
         color: #525252;
-        padding-top: 20px;
-        padding-left: 14px;
-    }   
-    
+    }
+
+    .star {
+        color:  #ffb400;
+        font-size: 10px;
+        line-height: 8px;
+    }
+
+    .news-date {
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 0.8;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        color: #e9b229;
+        margin-bottom: 10px;
+    }
+
+    .news-preview {
+        padding: 20px 0;
+        border-bottom: 1px solid #d8d8d8;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+
+        .side-with-img {
+            width: 108px;
+            flex-shrink: 0;
+            margin-right: 13px;
+        }
+
+        .news-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .news-header {
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: -0.3px;
+        }
+
+        .rating {
+            margin-bottom: 5px;
+        }
+    }
 }
+
+.be-social {
+    width: 350px;
+
+    .news-column-header {
+        position: relative;
+
+        .section-header-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #ffb400;
+            bottom: 0px;
+        }
+    }
+
+    .news-section-header {
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        letter-spacing: -1.5px;
+        color: #ffffff;
+        background-color: #ffb400;
+        display:inline-block;
+        padding: 10px;
+        line-height: 0.8;
+    }
+
+    .social {
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    .facebook-icon, .rss-icon{
+        width: 102px;
+        height: 73px;
+        background-color: #535353;
+        color: white;
+        border: 1px solid #535353;
+    }
+
+    .twitter-icon {
+        width: 102px;
+        height: 73px;
+        background-color: #ffb400;
+        color: white;
+        border: 1px solid #ffb400;
+    }
+
+    .fans {
+        width: 102px;
+        height: 73px;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .count-fans {
+        width: 60px;
+        height: 17px;
+        font-weight: bold;
+        font-family: TitilliumText25L-999wt;
+        font-size: 24px;
+        line-height: 0.75;
+        letter-spacing: -0.6px;
+        text-align: center;
+        color: #919191;
+    }
+
+    .social-net-text{ 
+        width: 84px;
+        height: 9px;
+        font-family: TitilliumText25L-999wt;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: -0.3px;
+        text-align: center;
+        color: #acacac;
+    }
+
+}
+

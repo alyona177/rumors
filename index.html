@@ -44,14 +44,12 @@
         </div>
     </header>
     <section class="slider">
-        <div class="container flex-container">
+        <div class="top-slider flex-container">
             <div class="current-slide">
                 <img src="./img/Hangover 3 Movie.jpg" alt="Hangover 3 Movie pic" class="current-slide-pic">
                 <div class="slider-arrows flex-container">
-                <div class="current-news-info">
-                    <div class="current-news-header">The Hangover 3: The Trilogy Finale Teaser Trailer</div>
-                    <div class="current-news-description">Ever since the first ‘The Hangover’ movie (which also had an equally amazing movie trailer), people across the country have been enamored by the magic of black-out drinking...</div>
-                    <div class="current-news-date"></div>
+                    <button class="slide-button"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slide-button"><i class="fas fa-chevron-right"></i></button>
                 </div>
                 <div class="slider-arrows-line"></div>
                 <div class="current-slide-item flex-container">
@@ -114,85 +112,147 @@
     <div class="container flex-container">
         <section class="left-column">
             <div class="top-part grid-container">
-                <div class="hot-news">
-                    <div class="news-section-header"></div>
-                    <div class="hot-news-list flex-container">
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date">12 march 2013</div>
-                            <div class="news-header">'Iron Man 3' Secrets Revealed: Robert Downey Jr. Explains It All</div>
-                            <div class="news-score">
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
+                <div class="news-column">
+                    <div class="news-column-header">
+                        <div class="news-section-header">Hot news</div>
+                        <div class="section-header-line"></div>
+                    </div>
+                    <div class="news-list flex-container">
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">'Iron Man 3' Secrets Revealed: Robert Downey Jr. Explains It All</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Brad Pitt and Angelina Jolie set for May wedding</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Sexy Penelope Cruz Wears A Black Leather Coat Dress In Rome</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
                             </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date">12 march 2013</div>
-                            <div class="news-header">'Iron Man 3' Secrets Revealed: Robert Downey Jr. Explains It All</div>
-                            <div class="news-score">
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
                             </div>
-                        </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date">12 march 2013</div>
-                            <div class="news-header">'Iron Man 3' Secrets Revealed: Robert Downey Jr. Explains It All</div>
-                            <div class="news-score">
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date">12 march 2013</div>
-                            <div class="news-header">'Iron Man 3' Secrets Revealed: Robert Downey Jr. Explains It All</div>
-                            <div class="news-score">
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Gerard Butler: 'Olympus Has Fallen' New York Screening!</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="popular-news">
-                    <div class="news-section-header"></div>
-                    <div class="flex-container">
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                <div class="news-column">
+                    <div class="news-column-header">
+                        <div class="news-section-header">Popular news</div>
+                        <div class="section-header-line"></div>
+                    </div>
+                    <div class="news-list flex-container">
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Paris Hilton & River Viiperi Remind Us How Cute Their Future Babies Will Look!</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Paris Hilton & River Viiperi Remind Us How Cute Their Future Babies Will Look!</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div> 
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Do Critics Think Jason Statham’s New Action Movie Kicks Ass?</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Scarlett Johansson & Romain Dauriac Are Not Engaged</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,29 +384,32 @@
                 </div>
             </div>
         </section>
-        <section class="right-column">
+        <section class="right-column flex-container">
             <div class="be-social">
-                <div class="news-section-header"></div>
-                <div class="flex-container">
+                <div class="news-column-header">
+                    <div class="news-section-header">Be social</div>
+                    <div class="section-header-line"></div>
+                </div>
+                <div class="social flex-container">
                     <div class="social-net">
-                        <div class="icon"></div>
+                        <button class="facebook-icon"><i class="fab fa-facebook-f"></i></button>
                         <div class="fans">
-                            <span class="count-fans"></span>
-                            <span class="social-net-text"></span>
+                            <span class="count-fans">24215</span> </br>
+                            <span class="social-net-text">facebook fans</span>
                         </div>
                     </div>
                     <div class="social-net">
-                        <div class="icon"></div>
+                        <button class="twitter-icon"><i class="fab fa-twitter"></i></button>
                         <div class="fans">
-                            <span class="count-fans"></span>
-                            <span class="social-net-text"></span>
+                            <span class="count-fans">14019</span> </br>
+                            <span class="social-net-text">twitter fans</span>
                         </div>
                     </div>
                     <div class="social-net">
-                        <div class="icon"></div>
+                        <button class="rss-icon"><i class="fas fa-rss"></i></button>
                         <div class="fans">
-                            <span class="count-fans"></span>
-                            <span class="social-net-text"></span>
+                            <span class="count-fans">45221</span> </br>
+                            <span class="social-net-text">subscribers</span>
                         </div>
                     </div>
                 </div>
