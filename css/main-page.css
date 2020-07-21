@@ -197,13 +197,27 @@ header .search-icon {
   -ms-grid-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template: 1fr 1fr  / 1fr 1fr;
+  grid-column-gap: 30px;
 }
 
 .top-part > div {
   border: 1px solid black;
 }
 
-.entertainment .news-section-header {
+.entertainment, .business {
+  position: relative;
+}
+
+.entertainment:before, .business:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #ffb400;
+  top: 44px;
+}
+
+.entertainment .news-section-header, .business .news-section-header {
   font-family: 'Bebas Neue';
   font-size: 30px;
   letter-spacing: -1.5px;
@@ -211,28 +225,56 @@ header .search-icon {
   background-color: #ffb400;
   display: inline-block;
   padding: 10px;
+  line-height: 0.8;
+  margin-bottom: 5px;
 }
 
-.entertainment .opened-news img {
-  display: block;
+.entertainment .news-header, .business .news-header {
+  font-family: 'Titillium Web';
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #525252;
 }
 
-.entertainment .opened-news .img-with-stars {
+.entertainment .star, .business .star {
+  color: #ffb400;
+  font-size: 10px;
+  line-height: 8px;
+}
+
+.entertainment .news-date, .business .news-date {
+  font-family: 'Titillium Web';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 0.8;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #e9b229;
+  margin-bottom: 10px;
+}
+
+.entertainment .opened-news, .entertainment .news-preview, .business .opened-news, .business .news-preview {
+  padding: 20px 0;
+}
+
+.entertainment .opened-news .img-with-stars, .business .opened-news .img-with-stars {
   width: 100%;
   height: 100%;
   position: relative;
+  margin-bottom: 16px;
 }
 
-.entertainment .opened-news .news-pic {
+.entertainment .opened-news .news-pic, .business .opened-news .news-pic {
   width: 100%;
   height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  display: block;
 }
 
-.entertainment .opened-news .rating {
+.entertainment .opened-news .rating, .business .opened-news .rating {
   background-color: #3c3c3c;
   position: absolute;
   bottom: 0;
@@ -240,9 +282,48 @@ header .search-icon {
   padding: 12px;
 }
 
-.entertainment .opened-news .star {
-  color: #ffb400;
-  font-size: 10px;
-  line-height: 8px;
+.entertainment .opened-news .news-header, .business .opened-news .news-header {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.45px;
+  margin-bottom: 10px;
+}
+
+.entertainment .opened-news .news-info, .business .opened-news .news-info {
+  font-family: 'Titillium Web';
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #6f6f6f;
+}
+
+.entertainment .news-preview, .business .news-preview {
+  border-top: 1px solid #d8d8d8;
+}
+
+.entertainment .news-preview .side-with-img, .business .news-preview .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+}
+
+.entertainment .news-preview .news-pic, .business .news-preview .news-pic {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.entertainment .news-preview .news-header, .business .news-preview .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.entertainment .news-preview .rating, .business .news-preview .rating {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main-page.css.map */
