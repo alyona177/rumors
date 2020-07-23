@@ -28,6 +28,7 @@
         top: 44px;
     }
 }
+
 .news-section-header {
     font-family: 'Bebas Neue';
     font-size: 30px;
@@ -141,4 +142,27 @@
     height: 280px;
     object-fit: cover;
     object-position: center;
+}
+
+.tags {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: -0.3px;
+        color: #ffffff;
+        background-color: rgb(83,83,83);
+        padding: 10px 13px;
+        margin-right: 4px;
+        margin-bottom: 5px;
+
+        &:hover {
+            background-color: #ffb400;
+        }
+    }
 }
