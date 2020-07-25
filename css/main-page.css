@@ -57,6 +57,17 @@
   display: grid;
 }
 
+.right-column {
+  width: 340px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 header .container {
   position: relative;
 }
@@ -92,6 +103,9 @@ header .logo {
   background-size: cover;
   color: white;
   margin: 27px 10px 12px 0;
+  padding: 18px 17px 18px 16px;
+  position: relative;
+  z-index: 0;
 }
 
 header .magazine-name {
@@ -101,7 +115,7 @@ header .magazine-name {
   letter-spacing: -4.75px;
   text-transform: uppercase;
   line-height: 69px;
-  margin: 22px 18px 12px;
+  margin-bottom: 10px;
 }
 
 header .logo-text {
@@ -111,28 +125,21 @@ header .logo-text {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
-  margin-bottom: 16px;
+  z-index: 1;
+  background-color: #ffb400;
+  padding: 0 8px;
+  display: inline-block;
   position: relative;
 }
 
-header .logo-text:before {
-  content: "";
+header .logo-line {
   position: absolute;
   height: 1px;
-  width: 53px;
-  background-color: #fffff0;
-  top: 8px;
-  left: 13px;
-}
-
-header .logo-text:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 53px;
-  background-color: #fffff0;
-  top: 8px;
-  right: 13px;
+  bottom: 25px;
+  background-color: white;
+  right: 15px;
+  left: 15px;
+  bottom: 28px;
 }
 
 header .link-container {
@@ -151,16 +158,35 @@ header .nav-link {
   letter-spacing: -0.38px;
 }
 
-header .e::after {
+header .current-section::after {
   content: "";
-  background-image: url(../img/header/nav-hover-bg.png);
+  background-color: #ffb400;
   position: absolute;
   width: 100%;
+  height: 98%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+header .current-section::before {
+  content: "";
+  background-color: #e4a40b;
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+header .current-section .nav-link {
+  color: white;
 }
 
 header .search {
@@ -497,7 +523,6 @@ header .search-icon {
 
 .slider-news .slider-news-preview .news-header {
   text-transform: uppercase;
-  font-family: TitilliumText25L-600wt;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: -0.3px;
@@ -636,6 +661,7 @@ header .search-icon {
   background-color: #535353;
   color: white;
   border: 1px solid #535353;
+  padding: 20px 0px 0px 38px;
 }
 
 .be-social .twitter-icon {
@@ -644,6 +670,7 @@ header .search-icon {
   background-color: #ffb400;
   color: white;
   border: 1px solid #ffb400;
+  padding: 20px 0px 0px 38px;
 }
 
 .be-social .fans {
@@ -666,6 +693,17 @@ header .search-icon {
   color: #919191;
 }
 
+.be-social .social-netlink {
+  width: 12px;
+  height: 24px;
+  font-family: LucidaGrande;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 0.6;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+
 .be-social .social-net-text {
   width: 84px;
   height: 9px;
@@ -682,6 +720,7 @@ header .search-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 20px;
 }
 
 .sorted-news .sorted-news-header {
@@ -706,6 +745,10 @@ header .search-icon {
   display: inline-block;
   padding: 10px;
   line-height: 0.8;
+}
+
+.sorted-news .news-section-header:hover {
+  background-color: #535353;
 }
 
 .sorted-news .news-preview {

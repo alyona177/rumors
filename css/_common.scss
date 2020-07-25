@@ -53,6 +53,14 @@
     display: grid;
 }
 
+.right-column {
+
+    width: 340px;
+    flex-shrink:0;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
 header {
     .container {
         position: relative;
@@ -489,7 +497,6 @@ header {
 
             .news-header {
                 text-transform: uppercase;
-                font-family: TitilliumText25L-600wt;
                 font-size: 12px;
                 line-height: 1.5;
                 letter-spacing: -0.3px;
@@ -627,6 +634,7 @@ header {
         background-color: #535353;
         color: white;
         border: 1px solid #535353;
+        padding: 20px 0px 0px 38px;
     }
 
     .twitter-icon {
@@ -635,6 +643,7 @@ header {
         background-color: #ffb400;
         color: white;
         border: 1px solid #ffb400;
+        padding: 20px 0px 0px 38px;
     }
 
     .fans {
@@ -657,6 +666,17 @@ header {
         color: #919191;
     }
 
+    .social-netlink{
+        width: 12px;
+        height: 24px;
+        font-family: LucidaGrande;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 0.6;
+        letter-spacing: -1.5px;
+        color: #ffffff;
+      }
+
     .social-net-text{ 
         width: 84px;
         height: 9px;
@@ -673,10 +693,12 @@ header {
 .sorted-news{
 
     flex-direction: column;
+    margin-top: 20px;
 
     .sorted-news-header {
         position: relative;
 
+        
         .section-header-line {
             position: absolute;
             width: 100%;
@@ -696,6 +718,11 @@ header {
         display:inline-block;
         padding: 10px;
         line-height: 0.8;
+
+        &:hover {
+            background-color: #535353;
+        }
+
     }
 
     .news-preview {
