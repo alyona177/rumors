@@ -1,41 +1,48 @@
 @font-face {
-    font-family: 'Titillium Web';
-    src: local('Titillium Web'), local('TitilliumWeb-Regular'), url('../fonts/titilliumweb.woff2') format('woff2'), url('../fonts/titilliumweb.woff') format('woff'), url('../fonts/titilliumweb.ttf') format('truetype');
+    font-family: "Titillium Web";
+    src: local("Titillium Web"), local("TitilliumWeb-Regular"), url("../fonts/titilliumweb.woff2") format("woff2"),
+        url("../fonts/titilliumweb.woff") format("woff"), url("../fonts/titilliumweb.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Titillium Web';
-    src: local('Titillium WebSemiBold'), local('../fonts/TitilliumWeb-SemiBold'), url('../fonts/titilliumwebsemibold.woff2') format('woff2'), url('../fonts/titilliumwebsemibold.woff') format('woff'), url('../fonts/titilliumwebsemibold.ttf') format('truetype');
+    font-family: "Titillium Web";
+    src: local("Titillium WebSemiBold"), local("../fonts/TitilliumWeb-SemiBold"),
+        url("../fonts/titilliumwebsemibold.woff2") format("woff2"),
+        url("../fonts/titilliumwebsemibold.woff") format("woff"),
+        url("../fonts/titilliumwebsemibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'Titillium Web';
-    src: local('Titillium WebBlack'), local('TitilliumWeb-Black'), url('../fonts/titilliumwebblack.woff2') format('woff2'), url('../fonts/titilliumwebblack.woff') format('woff'), url('../fonts/titilliumwebblack.ttf') format('truetype');
+    font-family: "Titillium Web";
+    src: local("Titillium WebBlack"), local("TitilliumWeb-Black"),
+        url("../fonts/titilliumwebblack.woff2") format("woff2"), url("../fonts/titilliumwebblack.woff") format("woff"),
+        url("../fonts/titilliumwebblack.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/bebasneueregular.woff2') format('woff2'), url('../fonts/bebasneueregular.woff') format('woff'), url('../fonts/bebasneueregular.ttf') format('truetype');
+    font-family: "Bebas Neue";
+    src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasneueregular.woff2") format("woff2"),
+        url("../fonts/bebasneueregular.woff") format("woff"), url("../fonts/bebasneueregular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/bebasneuebold.woff2') format('woff2'), url('../fonts/bebasneuebold.woff') format('woff'), url('../fonts/bebasneuebold.ttf') format('truetype');
+    font-family: "Bebas Neue";
+    src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2"),
+        url("../fonts/bebasneuebold.woff") format("woff"), url("../fonts/bebasneuebold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 * {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -45,7 +52,7 @@
 }
 
 .flex-container {
-	display: flex;
+    display: flex;
 }
 
 .grid-container {
@@ -84,7 +91,7 @@ header {
         text-align: center;
         background-image: url(../img/header/logo-bg.png);
         background-size: cover;
-        color:white;
+        color: white;
         margin: 27px 10px 12px 0;
         padding: 18px 17px 18px 16px;
         position: relative;
@@ -92,7 +99,7 @@ header {
     }
 
     .magazine-name {
-        font-family: 'Bebas Neue';
+        font-family: "Bebas Neue";
         font-size: 95px;
         font-weight: 700;
         letter-spacing: -4.75px;
@@ -102,21 +109,21 @@ header {
     }
 
     .logo-text {
-        font-family: 'Bebas Neue';
+        font-family: "Bebas Neue";
         font-size: 20px;
         letter-spacing: -0.5px;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 16px;
         z-index: 1;
-        background-color:  #ffb400;
+        background-color: #ffb400;
         padding: 0 8px;
         display: inline-block;
         position: relative;
     }
 
     .logo-line {
-        position:absolute;
+        position: absolute;
         height: 1px;
         bottom: 25px;
         background-color: white;
@@ -124,7 +131,6 @@ header {
         left: 15px;
         bottom: 28px;
     }
-
 
     .link-container {
         padding: 103px 14px 0px 14px;
@@ -135,36 +141,36 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         color: #444444;
-        font-family: 'Titillium Web';
+        font-family: "Titillium Web";
         font-weight: 600;
         line-height: 11px;
         font-size: 15px;
-        letter-spacing:-0.38px;
+        letter-spacing: -0.38px;
     }
 
-    .current-section{
-        &::after { 
-        content:"";
-        background-color: #ffb400;
-        position: absolute;
-        width: 100%;
-        height: 98%;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        z-index: -1;
+    .current-section {
+        &::after {
+            content: "";
+            background-color: #ffb400;
+            position: absolute;
+            width: 100%;
+            height: 98%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
         }
         &::before {
-            content:"";
+            content: "";
             background-color: #e4a40b;
             position: absolute;
             width: 95%;
             height: 100%;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             margin: 0 auto;
             z-index: -1;
         }
@@ -181,11 +187,11 @@ header {
     .search-field {
         width: 160px;
         height: 41px;
-        font-family: 'Titillium Web';
+        font-family: "Titillium Web";
         font-size: 12px;
         padding: 17px 0 15px 13px;
-        background: rgb(240,240,240);
-        border:none;
+        background: rgb(240, 240, 240);
+        border: none;
 
         &:focus {
             outline: none;
@@ -194,10 +200,9 @@ header {
 
     .search-icon {
         position: absolute;
-        right:10px;
-        top:90px;
+        right: 10px;
+        top: 90px;
     }
-
 }
 
 .current-slide-pic {
@@ -212,15 +217,15 @@ header {
     height: 357px;
 }
 
-.current-news-info{
+.current-news-info {
     position: relative;
-    background-color:#292929;
+    background-color: #292929;
     width: 614px;
     height: 99px;
     opacity: 0.9;
     top: 258px;
 
-    .current-news-header{
+    .current-news-header {
         text-transform: uppercase;
         font-family: TitilliumText25L-600wt;
         font-size: 18px;
@@ -232,7 +237,7 @@ header {
         padding-left: 14px;
     }
 
-    .current-news-description{
+    .current-news-description {
         font-family: TitilliumText25L-400wt;
         font-size: 12px;
         line-height: 1.5;
@@ -242,6 +247,448 @@ header {
         padding-top: 18px;
         padding-left: 14px;
     }
-    
 }
 
+footer {
+    .container {
+        position: relative;
+        height: 466px;
+        background-color: #2d2d2d;
+
+        .square {
+            height: 44px;
+            width: 44px;
+            background: #ffffff;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 50%;
+            top: -34px;
+
+        }
+
+        .logo {
+            text-align: center;
+            background-image: url(../img/footer/logo-bg-2.png);
+            background-size: cover;
+            color: white;
+            margin-left: 1px;
+            padding: 18px 17px 18px 16px;
+            position: relative;
+            top: -39px;
+            z-index: 0;
+            width: 243px;
+        }
+
+        .magazine-name {
+            font-family: "Bebas Neue";
+            font-size: 95px;
+            font-weight: 700;
+            letter-spacing: -4.75px;
+            text-transform: uppercase;
+            line-height: 69px;
+            margin-bottom: 10px;
+        }
+
+        .logo-text {
+            font-family: "Bebas Neue";
+            font-size: 20px;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 16px;
+            z-index: 1;
+            background-color: #ffb400;
+            padding: 0 8px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .logo-line {
+            position: absolute;
+            height: 1px;
+            bottom: 25px;
+            background-color: white;
+            right: 15px;
+            left: 15px;
+            bottom: 28px;
+        }
+
+        .rumors-info {
+            width: 345px;
+            height: 265px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            border-bottom: 1px solid #141414;
+
+            .text-about-site {
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #7a7a7a;
+                position: absolute;
+                bottom: 33px;
+                height: 100px;
+                width: 333px;
+
+                .text-1 {
+                    position: absolute;
+                    top: 0px;
+                }
+
+                .text-2 {
+                    position: absolute;
+                    bottom: 0px;
+                }
+            }
+        }
+
+        .rumors-contacts {
+            width: 345px;
+            height: 163px;
+            position: absolute;
+            flex-direction: column;
+            left: 0px;
+            bottom: 38px;
+            border-top: 1px solid #3e3e3e;
+
+            .location {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 27px;
+                padding-left: 3px;
+                height: 15px;
+
+                .location-text {
+                    margin-left: 13px;
+                    font-family: "Titillium Web";
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+
+            .phone {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 55px;
+                padding-left: 4px;
+                height: 14px;
+
+                .phone-text {
+                    margin-left: 13px;
+                    font-family: "Titillium Web";
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+
+            .email {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 80px;
+                padding-left: 4px;
+                height: 16px;
+
+                .email-text {
+                    margin-left: 12px;
+                    font-family: "Titillium Web";
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+        }
+
+        .latest-news {
+            position: absolute;
+            left: 373px;
+            top: 0px;
+            width: 345px;
+            height: 428px;
+
+            .news-section-header {
+                position: absolute;
+                top: 48px;
+                background-color: #e9b229;
+                margin-bottom: 0px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 345px;
+                    background-color: #e9b229;
+                    bottom: 0px;
+                    left: 0px;
+                }
+            }
+
+            .latest-news-block {
+                flex-direction: column;
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+
+                .news-preview-1 {
+                    height: 107px;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 25px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 20px;
+                        color: #525252;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-2 {
+                    height: 103px;
+                    border-top: 1px solid #3e3e3e;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 21px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 16px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-3 {
+                    height: 126px;
+                    border-top: 1px solid #3e3e3e;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 23px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 18px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .most-popular-news {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 342px;
+            height: 428px;
+
+            .news-section-header {
+                position: absolute;
+                top: 48px;
+                margin-bottom: 0px;
+                background-color: #e9b229;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 342px;
+                    background-color: #e9b229;
+                    bottom: 0px;
+                    left: 0px;
+                }
+            }
+
+            .most-popular-news-block {
+                flex-direction: column;
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+
+                .news-preview-1 {
+                    height: 107px;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 25px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 20px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-2 {
+                    height: 103px;
+                    border-top: 1px solid #3e3e3e;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 21px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 16px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-3 {
+                    height: 126px;
+                    border-top: 1px solid #3e3e3e;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 23px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 18px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            align-items: center;
+            padding: 13px 0 12px 2px;
+            position: absolute;
+            bottom: 0;
+            height: 38px;
+            width: 100%;
+            line-height: 18px;
+            background-color: #232323;
+
+            .text-1 {
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                color: #7a7a7a;
+            }
+
+            .text-2 {
+                margin-left: 4px;
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                color: #e9b229;
+            }
+
+            .text-3 {
+                margin-left: 4px;
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                color: #5f5f5f;
+            }
+        }
+    }
+}

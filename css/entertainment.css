@@ -1,33 +1,33 @@
 @font-face {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   src: local("Titillium Web"), local("TitilliumWeb-Regular"), url("../fonts/titilliumweb.woff2") format("woff2"), url("../fonts/titilliumweb.woff") format("woff"), url("../fonts/titilliumweb.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   src: local("Titillium WebSemiBold"), local("../fonts/TitilliumWeb-SemiBold"), url("../fonts/titilliumwebsemibold.woff2") format("woff2"), url("../fonts/titilliumwebsemibold.woff") format("woff"), url("../fonts/titilliumwebsemibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   src: local("Titillium WebBlack"), local("TitilliumWeb-Black"), url("../fonts/titilliumwebblack.woff2") format("woff2"), url("../fonts/titilliumwebblack.woff") format("woff"), url("../fonts/titilliumwebblack.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasneueregular.woff2") format("woff2"), url("../fonts/bebasneueregular.woff") format("woff"), url("../fonts/bebasneueregular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2"), url("../fonts/bebasneuebold.woff") format("woff"), url("../fonts/bebasneuebold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -97,7 +97,7 @@ header .logo {
 }
 
 header .magazine-name {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-size: 95px;
   font-weight: 700;
   letter-spacing: -4.75px;
@@ -107,7 +107,7 @@ header .magazine-name {
 }
 
 header .logo-text {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-size: 20px;
   letter-spacing: -0.5px;
   font-weight: 700;
@@ -139,7 +139,7 @@ header .nav-link {
   text-transform: uppercase;
   text-decoration: none;
   color: #444444;
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   font-weight: 600;
   line-height: 11px;
   font-size: 15px;
@@ -185,7 +185,7 @@ header .search {
 header .search-field {
   width: 160px;
   height: 41px;
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   font-size: 12px;
   padding: 17px 0 15px 13px;
   background: #f0f0f0;
@@ -246,6 +246,489 @@ header .search-icon {
   padding-left: 14px;
 }
 
+footer .container {
+  position: relative;
+  height: 466px;
+  background-color: #2d2d2d;
+}
+
+footer .container .square {
+  height: 44px;
+  width: 44px;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  right: 50%;
+  top: -34px;
+}
+
+footer .container .logo {
+  text-align: center;
+  background-image: url(../img/footer/logo-bg-2.png);
+  background-size: cover;
+  color: white;
+  margin-left: 1px;
+  padding: 18px 17px 18px 16px;
+  position: relative;
+  top: -39px;
+  z-index: 0;
+  width: 243px;
+}
+
+footer .container .magazine-name {
+  font-family: "Bebas Neue";
+  font-size: 95px;
+  font-weight: 700;
+  letter-spacing: -4.75px;
+  text-transform: uppercase;
+  line-height: 69px;
+  margin-bottom: 10px;
+}
+
+footer .container .logo-text {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+  z-index: 1;
+  background-color: #ffb400;
+  padding: 0 8px;
+  display: inline-block;
+  position: relative;
+}
+
+footer .container .logo-line {
+  position: absolute;
+  height: 1px;
+  bottom: 25px;
+  background-color: white;
+  right: 15px;
+  left: 15px;
+  bottom: 28px;
+}
+
+footer .container .rumors-info {
+  width: 345px;
+  height: 265px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-bottom: 1px solid #141414;
+}
+
+footer .container .rumors-info .text-about-site {
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #7a7a7a;
+  position: absolute;
+  bottom: 33px;
+  height: 100px;
+  width: 333px;
+}
+
+footer .container .rumors-info .text-about-site .text-1 {
+  position: absolute;
+  top: 0px;
+}
+
+footer .container .rumors-info .text-about-site .text-2 {
+  position: absolute;
+  bottom: 0px;
+}
+
+footer .container .rumors-contacts {
+  width: 345px;
+  height: 163px;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 0px;
+  bottom: 38px;
+  border-top: 1px solid #3e3e3e;
+}
+
+footer .container .rumors-contacts .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 27px;
+  padding-left: 3px;
+  height: 15px;
+}
+
+footer .container .rumors-contacts .location .location-text {
+  margin-left: 13px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+footer .container .rumors-contacts .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 55px;
+  padding-left: 4px;
+  height: 14px;
+}
+
+footer .container .rumors-contacts .phone .phone-text {
+  margin-left: 13px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+footer .container .rumors-contacts .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 80px;
+  padding-left: 4px;
+  height: 16px;
+}
+
+footer .container .rumors-contacts .email .email-text {
+  margin-left: 12px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+footer .container .latest-news {
+  position: absolute;
+  left: 373px;
+  top: 0px;
+  width: 345px;
+  height: 428px;
+}
+
+footer .container .latest-news .news-section-header {
+  position: absolute;
+  top: 48px;
+  background-color: #e9b229;
+  margin-bottom: 0px;
+}
+
+footer .container .latest-news .news-section-header::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 345px;
+  background-color: #e9b229;
+  bottom: 0px;
+  left: 0px;
+}
+
+footer .container .latest-news .latest-news-block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-1 {
+  height: 107px;
+  border-bottom: 1px solid #141414;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-1 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 25px;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-1 .news-pic {
+  width: 100%;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-1 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin-top: 20px;
+  color: #525252;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-1 .rating {
+  margin-bottom: 5px;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-2 {
+  height: 103px;
+  border-top: 1px solid #3e3e3e;
+  border-bottom: 1px solid #141414;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-2 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 21px;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-2 .news-pic {
+  width: 100%;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-2 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin-top: 16px;
+  color: #7a7a7a;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-2 .rating {
+  margin-bottom: 5px;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-3 {
+  height: 126px;
+  border-top: 1px solid #3e3e3e;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-3 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 23px;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-3 .news-pic {
+  width: 100%;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-3 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin-top: 18px;
+  color: #7a7a7a;
+}
+
+footer .container .latest-news .latest-news-block .news-preview-3 .rating {
+  margin-bottom: 5px;
+}
+
+footer .container .most-popular-news {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 342px;
+  height: 428px;
+}
+
+footer .container .most-popular-news .news-section-header {
+  position: absolute;
+  top: 48px;
+  margin-bottom: 0px;
+  background-color: #e9b229;
+}
+
+footer .container .most-popular-news .news-section-header::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 342px;
+  background-color: #e9b229;
+  bottom: 0px;
+  left: 0px;
+}
+
+footer .container .most-popular-news .most-popular-news-block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-1 {
+  height: 107px;
+  border-bottom: 1px solid #141414;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-1 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 25px;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-1 .news-pic {
+  width: 100%;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-1 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-1 .rating {
+  margin-bottom: 5px;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-2 {
+  height: 103px;
+  border-top: 1px solid #3e3e3e;
+  border-bottom: 1px solid #141414;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-2 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 21px;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-2 .news-pic {
+  width: 100%;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-2 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin-top: 16px;
+  color: #7a7a7a;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-2 .rating {
+  margin-bottom: 5px;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-3 {
+  height: 126px;
+  border-top: 1px solid #3e3e3e;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-3 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 23px;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-3 .news-pic {
+  width: 100%;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-3 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin-top: 18px;
+  color: #7a7a7a;
+}
+
+footer .container .most-popular-news .most-popular-news-block .news-preview-3 .rating {
+  margin-bottom: 5px;
+}
+
+footer .container .copyright {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 0 12px 2px;
+  position: absolute;
+  bottom: 0;
+  height: 38px;
+  width: 100%;
+  line-height: 18px;
+  background-color: #232323;
+}
+
+footer .container .copyright .text-1 {
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+footer .container .copyright .text-2 {
+  margin-left: 4px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  color: #e9b229;
+}
+
+footer .container .copyright .text-3 {
+  margin-left: 4px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  color: #5f5f5f;
+}
+
 .left-column {
   width: 717px;
   -ms-flex-negative: 0;
@@ -259,7 +742,7 @@ header .search-icon {
 .left-column .top-part {
   -ms-grid-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
-      grid-template: 1fr 1fr  / 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
   grid-column-gap: 30px;
 }
 
@@ -281,7 +764,7 @@ header .search-icon {
 }
 
 .news-section-header {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-size: 30px;
   letter-spacing: -1.5px;
   color: #ffffff;
@@ -293,7 +776,7 @@ header .search-icon {
 }
 
 .news-header {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   font-weight: 600;
   text-transform: uppercase;
   color: #525252;
@@ -306,7 +789,7 @@ header .search-icon {
 }
 
 .news-date {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   font-weight: 600;
   font-size: 12px;
   line-height: 0.8;
@@ -316,7 +799,8 @@ header .search-icon {
   margin-bottom: 10px;
 }
 
-.opened-news, .news-preview {
+.opened-news,
+.news-preview {
   padding: 20px 0;
 }
 
@@ -353,7 +837,7 @@ header .search-icon {
 }
 
 .opened-news .news-info {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: -0.3px;
@@ -405,7 +889,7 @@ header .search-icon {
 }
 
 .tags .tag {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
@@ -419,5 +903,206 @@ header .search-icon {
 
 .tags .tag:hover {
   background-color: #ffb400;
+}
+
+.bottom-part {
+  width: 100%;
+}
+
+.bottom-part .news-section-header {
+  margin-bottom: 0px;
+}
+
+.bottom-part .science-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-bottom: 78px;
+}
+
+.bottom-part .science-block .opened-news {
+  width: 344px;
+  padding: 20px 0 0 0;
+}
+
+.bottom-part .science-block .opened-news .img-with-stars {
+  width: 344px;
+  height: 169px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bottom-part .science-block .opened-news .news-pic {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+
+.bottom-part .science-block .opened-news .rating {
+  background-color: #3c3c3c;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+}
+
+.bottom-part .science-block .opened-news .news-header {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.45px;
+  margin-bottom: 13px;
+  padding-left: 1px;
+}
+
+.bottom-part .science-block .opened-news .news-info {
+  font-family: "Titillium Web";
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #6f6f6f;
+  padding-left: 3px;
+}
+
+.bottom-part .science-block .opened-news .news-date {
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 0.8;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #e9b229;
+  margin-bottom: 14px;
+  padding-left: 2px;
+}
+
+.bottom-part .science-block .science-news-preview-block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 345px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-1 {
+  height: 107px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-1 .news-pic {
+  width: 109px;
+  margin-top: 20px;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-1 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #525252;
+  height: 28px;
+  margin: 15px 0px 9px 14px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-1 .rating {
+  margin-bottom: 5px;
+  margin-left: 14px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-1 .news-date {
+  margin-left: 14px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-2 {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  height: 105px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-2 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 21px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-2 .news-pic {
+  width: 109px;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-2 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin: -5px 0px 0px 14px;
+  color: #525252;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-2 .rating {
+  margin-bottom: 5px;
+  margin-left: 14px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-2 .news-date {
+  margin-left: 14px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-3 {
+  padding-top: 23px;
+  padding-bottom: 24px;
+  height: 106px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-3 .side-with-img {
+  width: 108px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 13px;
+  margin-top: 23px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-3 .news-pic {
+  width: 109px;
+  height: 59px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-3 .news-header {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin: -5px 0px 0px 14px;
+  color: #525252;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-3 .rating {
+  margin-bottom: 5px;
+  margin-left: 14px;
+}
+
+.bottom-part .science-block .science-news-preview-block .news-preview-3 .news-date {
+  margin-left: 14px;
 }
 /*# sourceMappingURL=entertainment.css.map */
