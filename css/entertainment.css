@@ -61,7 +61,6 @@
   width: 340px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  border: 1px solid black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -88,7 +87,7 @@ header .container:after {
   height: 1px;
   width: 100%;
   background-color: #ffb400;
-  bottom: 15px;
+  bottom: 17px;
 }
 
 header .flex-container {
@@ -115,7 +114,7 @@ header .magazine-name {
   letter-spacing: -4.75px;
   text-transform: uppercase;
   line-height: 69px;
-  margin-bottom: 10px;
+  margin: 22px 18px 10px;
 }
 
 header .logo-text {
@@ -187,137 +186,6 @@ header .current-section::before {
 
 header .current-section .nav-link {
   color: white;
-}
-
-header .search {
-  padding: 90px 10px 0px 10px;
-  position: relative;
-}
-
-header .search-field {
-  width: 160px;
-  height: 41px;
-  font-family: 'Titillium Web';
-  font-size: 12px;
-  padding: 17px 0 15px 13px;
-  background: #f0f0f0;
-  border: none;
-}
-
-header .search-field:focus {
-  outline: none;
-}
-
-header .search-icon {
-  position: absolute;
-  right: 10px;
-  top: 90px;
-}
-
-header .container {
-  position: relative;
-}
-
-header .container:before {
-  content: "";
-  position: absolute;
-  height: 27px;
-  width: 1px;
-  background-color: #ffb400;
-  left: 5px;
-  top: 0px;
-}
-
-header .container:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  background-color: #ffb400;
-  bottom: 15px;
-}
-
-header .flex-container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header .logo {
-  text-align: center;
-  background-image: url(../img/logo-bg.png);
-  background-size: cover;
-  color: white;
-  margin: 27px 10px 12px 0;
-}
-
-header .magazine-name {
-  font-family: 'Bebas Neue';
-  font-size: 95px;
-  font-weight: 700;
-  letter-spacing: -4.75px;
-  text-transform: uppercase;
-  line-height: 69px;
-  margin: 22px 18px 12px;
-}
-
-header .logo-text {
-  font-family: 'Bebas Neue';
-  font-size: 20px;
-  letter-spacing: -0.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 16px;
-  margin-bottom: 16px;
-  position: relative;
-}
-
-header .logo-text:before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 53px;
-  background-color: #fffff0;
-  top: 8px;
-  left: 13px;
-}
-
-header .logo-text:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 53px;
-  background-color: #fffff0;
-  top: 8px;
-  right: 13px;
-}
-
-header .link-container {
-  padding: 103px 14px 0px 14px;
-  position: relative;
-}
-
-header .nav-link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #444444;
-  font-family: 'Titillium Web';
-  font-weight: 600;
-  line-height: 11px;
-  font-size: 15px;
-  letter-spacing: -0.38px;
-}
-
-header .e::after {
-  content: "";
-  background-image: url(../img/nav-hover-bg.png);
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
 }
 
 header .search {
@@ -799,10 +667,6 @@ header .search-icon {
   -ms-grid-columns: 1fr 1fr;
       grid-template: 1fr 1fr  / 1fr 1fr;
   grid-column-gap: 30px;
-}
-
-.left-column .top-part > div {
-  border: 1px solid black;
 }
 
 .subsection {
