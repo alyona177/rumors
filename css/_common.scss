@@ -1,41 +1,49 @@
 @font-face {
-    font-family: 'Titillium Web';
-    src: local('Titillium Web'), local('TitilliumWeb-Regular'), url('../fonts/titilliumweb.woff2') format('woff2'), url('../fonts/titilliumweb.woff') format('woff'), url('../fonts/titilliumweb.ttf') format('truetype');
+    font-family: "Titillium Web";
+    src: local("Titillium Web"), local("TitilliumWeb-Regular"), url("../fonts/titilliumweb.woff2") format("woff2"),
+        url("../fonts/titilliumweb.woff") format("woff"), url("../fonts/titilliumweb.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Titillium Web';
-    src: local('Titillium WebSemiBold'), local('../fonts/TitilliumWeb-SemiBold'), url('../fonts/titilliumwebsemibold.woff2') format('woff2'), url('../fonts/titilliumwebsemibold.woff') format('woff'), url('../fonts/titilliumwebsemibold.ttf') format('truetype');
+    font-family: "Titillium Web";
+    src: local("Titillium WebSemiBold"), local("../fonts/TitilliumWeb-SemiBold"),
+        url("../fonts/titilliumwebsemibold.woff2") format("woff2"),
+        url("../fonts/titilliumwebsemibold.woff") format("woff"),
+        url("../fonts/titilliumwebsemibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'Titillium Web';
-    src: local('Titillium WebBlack'), local('TitilliumWeb-Black'), url('../fonts/titilliumwebblack.woff2') format('woff2'), url('../fonts/titilliumwebblack.woff') format('woff'), url('../fonts/titilliumwebblack.ttf') format('truetype');
+    font-family: "Titillium Web";
+    src: local("Titillium WebBlack"), local("TitilliumWeb-Black"),
+        url("../fonts/titilliumwebblack.woff2") format("woff2"), url("../fonts/titilliumwebblack.woff") format("woff"),
+        url("../fonts/titilliumwebblack.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/bebasneueregular.woff2') format('woff2'), url('../fonts/bebasneueregular.woff') format('woff'), url('../fonts/bebasneueregular.ttf') format('truetype');
+    font-family: "Bebas Neue";
+    src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("../fonts/bebasneueregular.woff2") format("woff2"),
+        url("../fonts/bebasneueregular.woff") format("woff"), url("../fonts/bebasneueregular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/bebasneuebold.woff2') format('woff2'), url('../fonts/bebasneuebold.woff') format('woff'), url('../fonts/bebasneuebold.ttf') format('truetype');
+    font-family: "Bebas Neue";
+    src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2"),
+        url("../fonts/bebasneuebold.woff") format("woff"), url("../fonts/bebasneuebold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
+
 * {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -45,11 +53,17 @@
 }
 
 .flex-container {
-	display: flex;
+    display: flex;
 }
 
 .grid-container {
     display: grid;
+}
+
+.right-column {
+    width: 340px;
+    flex-shrink:0;
+    flex-direction: column;
 }
 
 header {
@@ -72,7 +86,7 @@ header {
             height: 1px;
             width: 100%;
             background-color: #ffb400;
-            bottom: 15px;
+            bottom: 17px;
         }
     }
 
@@ -84,7 +98,7 @@ header {
         text-align: center;
         background-image: url(../img/header/logo-bg.png);
         background-size: cover;
-        color:white;
+        color: white;
         margin: 27px 10px 12px 0;
         padding: 18px 17px 18px 16px;
         position: relative;
@@ -92,31 +106,31 @@ header {
     }
 
     .magazine-name {
-        font-family: 'Bebas Neue';
+        font-family: "Bebas Neue";
         font-size: 95px;
         font-weight: 700;
         letter-spacing: -4.75px;
         text-transform: uppercase;
         line-height: 69px;
-        margin-bottom: 10px;
+        margin: 22px 18px 10px;
     }
 
     .logo-text {
-        font-family: 'Bebas Neue';
+        font-family: "Bebas Neue";
         font-size: 20px;
         letter-spacing: -0.5px;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 16px;
         z-index: 1;
-        background-color:  #ffb400;
+        background-color: #ffb400;
         padding: 0 8px;
         display: inline-block;
         position: relative;
     }
 
     .logo-line {
-        position:absolute;
+        position: absolute;
         height: 1px;
         bottom: 25px;
         background-color: white;
@@ -124,7 +138,6 @@ header {
         left: 15px;
         bottom: 28px;
     }
-
 
     .link-container {
         padding: 103px 14px 0px 14px;
@@ -135,36 +148,36 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         color: #444444;
-        font-family: 'Titillium Web';
+        font-family: "Titillium Web";
         font-weight: 600;
         line-height: 11px;
         font-size: 15px;
-        letter-spacing:-0.38px;
+        letter-spacing: -0.38px;
     }
 
-    .current-section{
-        &::after { 
-        content:"";
-        background-color: #ffb400;
-        position: absolute;
-        width: 100%;
-        height: 98%;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        z-index: -1;
+    .current-section {
+        &::after {
+            content: "";
+            background-color: #ffb400;
+            position: absolute;
+            width: 100%;
+            height: 98%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
         }
         &::before {
-            content:"";
+            content: "";
             background-color: #e4a40b;
             position: absolute;
             width: 95%;
             height: 100%;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             margin: 0 auto;
             z-index: -1;
         }
@@ -181,11 +194,11 @@ header {
     .search-field {
         width: 160px;
         height: 41px;
-        font-family: 'Titillium Web';
+        font-family: "Titillium Web";
         font-size: 12px;
         padding: 17px 0 15px 13px;
-        background: rgb(240,240,240);
-        border:none;
+        background: rgb(240, 240, 240);
+        border: none;
 
         &:focus {
             outline: none;
@@ -194,54 +207,871 @@ header {
 
     .search-icon {
         position: absolute;
-        right:10px;
-        top:90px;
+        right: 10px;
+        top: 90px;
     }
-
 }
 
-.current-slide-pic {
+.slider{
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+.top-slider {
+    width: 1088px;
+}
+
+.slider-arrows{
+    height: 50px;
+    position: absolute;
+    bottom: 109px;
+    left: 41px;
+
+    .slide-button {
+        width: 50px;
+        height: 48px;
+        opacity: 0.9;
+        border: none;
+        background-color: #ffb400;
+        margin: 1px;
+        color: white;
+    }
+}
+
+.slider-arrows-line {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 1px;
+    background-color: #ffb400;
+    bottom: 109px;
 }
 
 .current-slide {
-    position: absolute;
+    position: relative;
     width: 715px;
     height: 357px;
-}
 
-.current-news-info{
-    position: relative;
-    background-color:#292929;
-    width: 614px;
-    height: 99px;
-    opacity: 0.9;
-    top: 258px;
-
-    .current-news-header{
-        text-transform: uppercase;
-        font-family: TitilliumText25L-600wt;
-        font-size: 18px;
-        line-height: 1;
-        letter-spacing: -0.45px;
-        text-align: left;
-        color: #ffffff;
-        padding-top: 20px;
-        padding-left: 14px;
+    .current-slide-pic {
+        width: 100%;
+        height: 100%;
     }
 
-    .current-news-description{
-        font-family: TitilliumText25L-400wt;
+    .current-slide-item {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .current-news-info{
+        background-color:#292929;
+        height: 99px;
+        opacity: 0.9;
+        flex-direction: column;
+        width: 100%;
+
+        .current-news-header{
+            text-transform: uppercase;
+            font-family: TitilliumText25L-600wt;
+            font-size: 18px;
+            line-height: 1;
+            letter-spacing: -0.45px;
+            text-align: left;
+            color: #ffffff;
+            padding-top: 20px;
+            padding-left: 14px;
+        }
+        
+        .current-news-description{
+            font-family: TitilliumText25L-400wt;
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #ffffff;
+            padding-top: 18px;
+            padding-left: 14px;
+        }
+    }
+
+    .current-news-date {
+        position: relative;
+        width: 100px;
+        opacity: 0.9;
+        background-color: #ffb400;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    .current-news-date-day{
+        width: 38px;
+        height: 43px;
+        font-family: BebasNeue;
+        font-size: 40px;
+        letter-spacing: -1.48px;
+        color: #ffffff;
+    }
+
+    .current-news-date-month{
+        width: 30px;
+        height: 9px;
+        font-family: TitilliumText25L-999wt;
+        font-size: 12px;
+        letter-spacing: -0.3px;
+        color: #ffffff;
+    }
+}
+}
+
+.slider-news{
+    width: 372px;
+    background-color: #2d2d2d; 
+
+    .slider-news-list{
+        flex-direction: column;
+        justify-content: space-around;
+        width: 322px;
+        height: 358px;
+        margin: auto;
+        }
+
+    .slider-news-preview{
+        border-bottom: 1px solid #3b3b3b;
+        height: 90px;
+        align-items: center;
+        flex-direction: row;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        .news-preview-picture {
+            width: 137px;
+            height: 45px;
+            
+            .news-preview-pic{
+                background-color: #1e1e1e;
+            }
+        }
+    
+        .news-prev-item{
+            height: 45px;
+            padding-left: 20px;
+        }                                                         
+
+            .news-header-selected {
+                text-transform: uppercase;
+                font-family: TitilliumText25L-600wt;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: -0.3px;
+                text-align: left;
+                color: #ffb400;
+            }
+
+            .news-header {
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: -0.3px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            .news-comments, .news-date {
+                font-size: 11px;
+                letter-spacing: -0.28px;
+                color: #626262;
+            }
+    }
+}
+
+.news-list {
+    flex-direction: column;
+}
+
+.news-column {
+
+    .news-column-header {
+        position: relative;
+
+        .section-header-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #ffb400;
+            bottom: 0px;
+        }
+    }
+
+    .news-section-header {
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        letter-spacing: -1.5px;
+        color: #ffffff;
+        background-color: #ffb400;
+        display:inline-block;
+        padding: 10px;
+        line-height: 0.8;
+    }
+
+    .news-header {
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #525252;
+    }
+
+    .star {
+        color:  #ffb400;
+        font-size: 10px;
+        line-height: 8px;
+    }
+
+    .news-date {
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 0.8;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        color: #e9b229;
+        margin-bottom: 10px;
+    }
+
+    .news-preview {
+        padding: 20px 0;
+        border-bottom: 1px solid #d8d8d8;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+
+        .side-with-img {
+            width: 108px;
+            flex-shrink: 0;
+            margin-right: 13px;
+        }
+
+        .news-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .news-header {
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: -0.3px;
+        }
+
+        .rating {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.be-social {
+
+    .news-column-header {
+        position: relative;
+
+        .section-header-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #ffb400;
+            bottom: 0px;
+        }
+    }
+
+    .news-section-header {
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        letter-spacing: -1.5px;
+        color: #ffffff;
+        background-color: #ffb400;
+        display:inline-block;
+        padding: 10px;
+        line-height: 0.8;
+    }
+
+    .social {
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    .facebook-icon, .rss-icon{
+        width: 102px;
+        height: 73px;
+        background-color: #535353;
+        color: white;
+        border: 1px solid #535353;
+        padding: 20px 0px 0px 38px;
+    }
+
+    .twitter-icon {
+        width: 102px;
+        height: 73px;
+        background-color: #ffb400;
+        color: white;
+        border: 1px solid #ffb400;
+        padding: 20px 0px 0px 38px;
+    }
+
+    .fans {
+        width: 102px;
+        height: 73px;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .count-fans {
+        width: 60px;
+        height: 17px;
+        font-weight: bold;
+        font-family: TitilliumText25L-999wt;
+        font-size: 24px;
+        line-height: 0.75;
+        letter-spacing: -0.6px;
+        text-align: center;
+        color: #919191;
+    }
+
+    .social-netlink{
+        width: 12px;
+        height: 24px;
+        font-family: LucidaGrande;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 0.6;
+        letter-spacing: -1.5px;
+        color: #ffffff;
+      }
+
+    .social-net-text{ 
+        width: 84px;
+        height: 9px;
+        font-family: TitilliumText25L-999wt;
         font-size: 12px;
         line-height: 1.5;
         letter-spacing: -0.3px;
-        text-align: left;
+        text-align: center;
+        color: #acacac;
+    }
+
+}
+
+.sorted-news{
+
+    flex-direction: column;
+    margin-top: 20px;
+
+    .sorted-news-header {
+        position: relative;
+
+        
+        .section-header-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #ffb400;
+            bottom: 0px;
+        }
+    }
+
+    .news-section-header {
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: -1.5px;
         color: #ffffff;
-        padding-top: 18px;
-        padding-left: 14px;
+        background-color: #ffb400;
+        display:inline-block;
+        padding: 10px;
+        line-height: 0.8;
+
+        &:hover {
+            background-color: #535353;
+        }
+
+    }
+
+    .news-preview {
+        padding: 20px 0;
+        border-bottom: 1px solid #d8d8d8;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+
+        .news-header {
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: -0.3px;
+            text-transform: uppercase;
+        }
+        
+        .star {
+            color:  #ffb400;
+            font-size: 10px;
+            line-height: 8px;
+        }
+
+        .news-info {
+            font-family: 'Titillium Web';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 0.8;
+            letter-spacing: -0.3px;
+            text-transform: uppercase;
+            color: #e9b229;
+            padding: 5px 0px;
+        }
     }
     
 }
 
+footer {
+    .container {
+        position: relative;
+        height: 466px;
+        background-color: #2d2d2d;
+
+        .square {
+            height: 44px;
+            width: 44px;
+            background: #ffffff;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 50%;
+            top: -34px;
+
+        }
+
+        .logo {
+            text-align: center;
+            background-image: url(../img/footer/logo-bg-2.png);
+            background-size: cover;
+            color: white;
+            margin-left: 1px;
+            padding: 18px 17px 18px 16px;
+            position: relative;
+            top: -39px;
+            z-index: 0;
+            width: 243px;
+        }
+
+        .magazine-name {
+            font-family: "Bebas Neue";
+            font-size: 95px;
+            font-weight: 700;
+            letter-spacing: -4.75px;
+            text-transform: uppercase;
+            line-height: 69px;
+            margin-bottom: 10px;
+        }
+
+        .logo-text {
+            font-family: "Bebas Neue";
+            font-size: 20px;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 16px;
+            z-index: 1;
+            background-color: #ffb400;
+            padding: 0 8px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .logo-line {
+            position: absolute;
+            height: 1px;
+            bottom: 25px;
+            background-color: white;
+            right: 15px;
+            left: 15px;
+            bottom: 28px;
+        }
+
+        .rumors-info {
+            width: 345px;
+            height: 265px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            border-bottom: 1px solid #141414;
+
+            .text-about-site {
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #7a7a7a;
+                position: absolute;
+                bottom: 33px;
+                height: 100px;
+                width: 333px;
+
+                .text-1 {
+                    position: absolute;
+                    top: 0px;
+                }
+
+                .text-2 {
+                    position: absolute;
+                    bottom: 0px;
+                }
+            }
+        }
+
+        .rumors-contacts {
+            width: 345px;
+            height: 163px;
+            position: absolute;
+            flex-direction: column;
+            left: 0px;
+            bottom: 38px;
+            border-top: 1px solid #3e3e3e;
+
+            .location {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 27px;
+                padding-left: 3px;
+                height: 15px;
+
+                .location-text {
+                    margin-left: 13px;
+                    font-family: "Titillium Web";
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+
+            .phone {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 55px;
+                padding-left: 4px;
+                height: 14px;
+
+                .phone-text {
+                    margin-left: 13px;
+                    font-family: "Titillium Web";
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+
+            .email {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 80px;
+                padding-left: 4px;
+                height: 16px;
+
+                .email-text {
+                    margin-left: 12px;
+                    font-family: "Titillium Web";
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #9b9b9b;
+                }
+            }
+        }
+
+        .latest-news {
+            position: absolute;
+            left: 373px;
+            top: 0px;
+            width: 345px;
+            height: 428px;
+
+            .news-section-header {
+                position: absolute;
+                top: 48px;
+                background-color: #e9b229;
+                margin-bottom: 0px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 345px;
+                    background-color: #e9b229;
+                    bottom: 0px;
+                    left: 0px;
+                }
+            }
+
+            .latest-news-block {
+                flex-direction: column;
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+
+                .news-preview-1 {
+                    height: 107px;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 25px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 20px;
+                        color: #525252;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-2 {
+                    height: 103px;
+                    border-top: 1px solid #3e3e3e;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 21px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 16px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-3 {
+                    height: 126px;
+                    border-top: 1px solid #3e3e3e;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 23px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 18px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .most-popular-news {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 342px;
+            height: 428px;
+
+            .news-section-header {
+                position: absolute;
+                top: 48px;
+                margin-bottom: 0px;
+                background-color: #e9b229;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 342px;
+                    background-color: #e9b229;
+                    bottom: 0px;
+                    left: 0px;
+                }
+            }
+
+            .most-popular-news-block {
+                flex-direction: column;
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+
+                .news-preview-1 {
+                    height: 107px;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 25px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 20px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-2 {
+                    height: 103px;
+                    border-top: 1px solid #3e3e3e;
+                    border-bottom: 1px solid #141414;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 21px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 16px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .news-preview-3 {
+                    height: 126px;
+                    border-top: 1px solid #3e3e3e;
+
+                    .side-with-img {
+                        width: 108px;
+                        flex-shrink: 0;
+                        margin-right: 13px;
+                        margin-top: 23px;
+                    }
+
+                    .news-pic {
+                        width: 100%;
+                        height: 59px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .news-header {
+                        font-size: 12px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        margin-top: 18px;
+                        color: #7a7a7a;
+                    }
+
+                    .rating {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            align-items: center;
+            padding: 13px 0 12px 2px;
+            position: absolute;
+            bottom: 0;
+            height: 38px;
+            width: 100%;
+            line-height: 18px;
+            background-color: #232323;
+
+            .text-1 {
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                color: #7a7a7a;
+            }
+
+            .text-2 {
+                margin-left: 4px;
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                color: #e9b229;
+            }
+
+            .text-3 {
+                margin-left: 4px;
+                font-family: "Titillium Web";
+                font-weight: 600;
+                font-size: 12px;
+                color: #5f5f5f;
+            }
+        }
+    }
+}

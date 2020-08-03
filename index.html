@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/entertainment.css">
     <title>Rumors</title>
+    <script src="https://kit.fontawesome.com/01d8a637db.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="container flex-container">
-            <div class="logo"> 
+            <div class="logo">
                 <div class="magazine-name">Rumors</div>
                 <div class="logo-text">News magazine</div>
                 <div class="logo-line"></div>
             </div>
             <nav class="flex-container">
                 <div class="link-container">
-                     <a href="" class="nav-link" target="_blank">World</a>
+                    <a href="" class="nav-link" target="_blank">World</a>
                 </div>
                 <div class="link-container">
                     <a href="" class="nav-link" target="_blank">Business</a>
-               </div>
-               <div class="link-container current-section">
-                <a href="" class="nav-link" target="_blank">Entertainment</a>
+                </div>
+                <div class="link-container current-section">
+                    <a href="" class="nav-link" target="_blank">Entertainment</a>
                 </div>
                 <div class="link-container">
                     <a href="" class="nav-link" target="_blank">Sports</a>
@@ -43,37 +46,68 @@
             </div>
         </div>
     </header>
-    <section class="news-slider">
-        <div class="container flex-container">
+    <section class="slider">
+        <div class="top-slider flex-container">
             <div class="current-slide">
-                <img src="./img/slider/Hangover 3 Movie.jpg" alt="Hangover 3 Movie pic" class="current-slide-pic">
-                <div class="slider-arrows"></div>
-                <div class="current-news-info">
-                    <div class="current-news-header">The Hangover 3: The Trilogy Finale Teaser Trailer</div>
-                    <div class="current-news-description">Ever since the first ‘The Hangover’ movie (which also had an equally amazing movie trailer), people across the country have been enamored by the magic of black-out drinking...</div>
-                    <div class="current-news-date"></div>
+                <img src="./img/Hangover 3 Movie.jpg" alt="Hangover 3 Movie pic" class="current-slide-pic">
+                <div class="slider-arrows flex-container">
+                    <button class="slide-button"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slide-button"><i class="fas fa-chevron-right"></i></button>
                 </div>
+                <div class="slider-arrows-line"></div>
+                <div class="current-slide-item flex-container">
+                    <div class="current-news-info flex-container">
+                        <div class="current-news-header">The Hangover 3: The Trilogy Finale Teaser Trailer</div>
+                        <div class="current-news-description">Ever since the first ‘The Hangover’ movie (which also had an equally amazing movie trailer), people across the country have been enamored by the magic of black-out drinking...</div>                                    
+                    </div>
+                    <div class="current-news-date flex-container">
+                        <div class="current-news-date-day"><span>12</span></div>
+                        <div class="current-news-date-month"><span>March</span></div>
+                    </div>
+                </div> 
             </div>
-            <div class="news-list flex-container">
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <span class="news-comments"></span>
-                    <span class="news-date"></span>
-                </div>
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <span class="news-comments"></span>
-                    <span class="news-date"></span>
-                </div>
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <span class="news-comments"></span>
-                    <span class="news-date"></span>
-                </div>
-                <div class="news-preview">
-                    <div class="news-header"></div>
-                    <span class="news-comments"></span>
-                    <span class="news-date"></span>
+            <div class="slider-news">
+                <div class="slider-news-list flex-container">
+                    <div class="slider-news-preview flex-container">
+                        <div class="news-preview-picture">
+                            <img src="./img/#" alt="news-preview" class="news-preview-pic">
+                        </div>
+                        <div class="news-prev-item">
+                            <div class="news-header-selected"><span class="news-header-title">The Hangover 3: The Trilogy Finale Teaser Trailer Leaked Online</span></div>
+                            <span class="news-comments">15 comments</span>
+                            <span class="news-date">// 12 March</span>
+                        </div>
+                    </div>
+                    <div class="slider-news-preview flex-container">
+                        <div class="news-preview-picture">
+                            <img src="./img/#" alt="news-preview" class="news-preview-pic">
+                        </div>
+                        <div class="news-prev-item">
+                            <div class="news-header"><span class="news-header-title">The Hangover 3: The Trilogy Finale Teaser Trailer Leaked Online</span></div>
+                            <span class="news-comments">15 comments</span>
+                            <span class="news-date">// 12 March</span>
+                        </div>
+                    </div>
+                    <div class="slider-news-preview flex-container">
+                        <div class="news-preview-picture">
+                            <img src="./img/#" alt="news-preview" class="news-preview-pic">
+                        </div>
+                        <div class="news-prev-item">
+                            <div class="news-header"><span class="news-header-title">The Hangover 3: The Trilogy Finale Teaser Trailer Leaked Online</span></div>
+                            <span class="news-comments">15 comments</span>
+                            <span class="news-date">// 12 March</span>
+                        </div>
+                    </div>
+                    <div class="slider-news-preview flex-container">
+                        <div class="news-preview-picture">
+                            <img src="./img/#" alt="news-preview" class="news-preview-pic">
+                        </div>
+                        <div class="news-prev-item">
+                            <div class="news-header"><span class="news-header-title">The Hangover 3: The Trilogy Finale Teaser Trailer Leaked Online</span></div>
+                            <span class="news-comments">15 comments</span>
+                            <span class="news-date">// 12 March</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,61 +115,147 @@
     <div class="container flex-container">
         <section class="left-column">
             <div class="top-part grid-container">
-                <div class="hot-news subsection">
-                    <div class="news-section-header"></div>
-                    <div class="flex-container">
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                <div class="news-column">
+                    <div class="news-column-header">
+                        <div class="news-section-header">Hot news</div>
+                        <div class="section-header-line"></div>
+                    </div>
+                    <div class="news-list flex-container">
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">'Iron Man 3' Secrets Revealed: Robert Downey Jr. Explains It All</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div> 
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Brad Pitt and Angelina Jolie set for May wedding</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div> 
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Sexy Penelope Cruz Wears A Black Leather Coat Dress In Rome</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Gerard Butler: 'Olympus Has Fallen' New York Screening!</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="popular-news subsection">
-                    <div class="news-section-header"></div>
-                    <div class="flex-container">
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                <div class="news-column">
+                    <div class="news-column-header">
+                        <div class="news-section-header">Popular news</div>
+                        <div class="section-header-line"></div>
+                    </div>
+                    <div class="news-list flex-container">
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Paris Hilton & River Viiperi Remind Us How Cute Their Future Babies Will Look!</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Paris Hilton & River Viiperi Remind Us How Cute Their Future Babies Will Look!</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div> 
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Do Critics Think Jason Statham’s New Action Movie Kicks Ass?</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-date"></div>
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
+                        <div class="news-preview flex-container">
+                            <div class="side-with-img">
+                                <img src="./img/entertainment/Statham.jpg" alt="Statham" class="news-pic">
+                            </div>
+                            <div class="side-with-news-info">
+                                <div class="news-date">12 march 2013</div>                    
+                                <div class="news-header">Scarlett Johansson & Romain Dauriac Are Not Engaged</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,8 +276,10 @@
                             </div>                           
                         </div>
                         <div class="news-header">The Hangover 3: The Trilogy Finale Teaser Trailer Leaked Online</div>
-                        <div class="news-date">12 march 2013  // 45 Comments</div>
-                        <div class="news-info">Ever since the first ‘The Hangover’ movie (which also had an equally amazing movie trailer), people across the country have been enamored by the magic of black-out drinking...</div>
+                        <div class="news-date">12 march 2013 // 45 Comments</div>
+                        <div class="news-info">Ever since the first ‘The Hangover’ movie (which also had an equally
+                            amazing movie trailer), people across the country have been enamored by the magic of
+                            black-out drinking...</div>
                     </div>
                     <div class="news-preview flex-container">
                         <div class="side-with-img">                           
@@ -166,7 +288,7 @@
                                 <img src="./img/hover-img-arrow.png" class="hover-arrow" alt="hover-img">
                             </div>  
                         </div>
-                        <div class="side-with-news-info">                    
+                        <div class="side-with-news-info">
                             <div class="news-header">Do Critics Think Jason Statham’s New Action Movie Kicks Ass?</div>
                             <div class="rating">
                                 <span class="star">★</span>
@@ -174,9 +296,9 @@
                                 <span class="star">★</span>
                                 <span class="star">★</span>
                                 <span class="star">★</span>
-                            </div> 
+                            </div>
                             <div class="news-date">12 march 2013</div>
-                        </div> 
+                        </div>
                     </div>
                     <div class="news-preview flex-container">
                         <div class="side-with-img">      
@@ -185,7 +307,7 @@
                                 <img src="./img/hover-img-arrow.png" class="hover-arrow" alt="hover-img">
                             </div> 
                         </div>
-                        <div class="side-with-news-info">                    
+                        <div class="side-with-news-info">
                             <div class="news-header">Brad Pitt and Angelina Jolie set for May wedding</div>
                             <div class="rating">
                                 <span class="star">★</span>
@@ -193,9 +315,9 @@
                                 <span class="star">★</span>
                                 <span class="star">★</span>
                                 <span class="star">★</span>
-                            </div> 
+                            </div>
                             <div class="news-date">12 march 2013</div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="business subsection">
@@ -215,8 +337,10 @@
                             </div>    
                         </div>
                         <div class="news-header">'Iron Man 3' Secrets Revealed: Robert Downey Jr. Explains It All</div>
-                        <div class="news-date">12 march 2013  // 45 Comments</div>
-                        <div class="news-info">Ever since the first ‘The Hangover’ movie (which also had an equally amazing movie trailer), people across the country have been enamored by the magic of black-out drinking...</div>
+                        <div class="news-date">12 march 2013 // 45 Comments</div>
+                        <div class="news-info">Ever since the first ‘The Hangover’ movie (which also had an equally
+                            amazing movie trailer), people across the country have been enamored by the magic of
+                            black-out drinking...</div>
                     </div>
                     <div class="news-preview flex-container">
                         <div class="side-with-img">
@@ -225,7 +349,7 @@
                                 <img src="./img/hover-img-arrow.png" class="hover-arrow" alt="hover-img">
                             </div>    
                         </div>
-                        <div class="side-with-news-info">                    
+                        <div class="side-with-news-info">
                             <div class="news-header">Scarlett Johansson & Romain Dauriac Are Not Engaged</div>
                             <div class="rating">
                                 <span class="star">★</span>
@@ -233,9 +357,9 @@
                                 <span class="star">★</span>
                                 <span class="star">★</span>
                                 <span class="star">★</span>
-                            </div> 
+                            </div>
                             <div class="news-date">12 march 2013</div>
-                        </div> 
+                        </div>
                     </div>
                     <div class="news-preview flex-container">
                         <div class="side-with-img">
@@ -244,70 +368,115 @@
                                 <img src="./img/hover-img-arrow.png" class="hover-arrow" alt="hover-img">
                             </div>    
                         </div>
-                        <div class="side-with-news-info">                    
-                            <div class="news-header">Jennifer Aniston planning 'fresh start' by changing her name</div> 
+                        <div class="side-with-news-info">
+                            <div class="news-header">Jennifer Aniston planning 'fresh start' by changing her name</div>
                             <div class="rating">
                                 <span class="star">★</span>
                                 <span class="star">★</span>
                                 <span class="star">★</span>
                                 <span class="star">★</span>
                                 <span class="star">★</span>
-                            </div> 
+                            </div>
                             <div class="news-date">12 march 2013</div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="bottom-part">
                 <div class="science subsection">
-                    <div class="news-section-header"></div>
-                    <div class="grid-container">
-                        <div class="opened-news">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-score"></div>
-                            <div class="news-header"></div>
-                            <div class="news-date"></div>
-                            <div class="news-info"></div>
+                    <div class="news-section-header">science</div>
+                </div>
+                <div class="science-block">
+                    <div class="opened-news">
+                        <div class="img-with-stars">
+                            <img src="./img/entertainment/iron-man3.jpg" alt="iron-man3" class="news-pic">
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
-                            <div class="news-date"></div>
+                        <div class="news-header">Will Smith Considering Hancock 2. when will this movie be released?</div>
+                        <div class="news-date">12 march 2013 / / 45 Comments</div>
+                        <div class="news-info">Ever since the first ‘The Hangover’ movie (which also had an equally
+                            amazing movie trailer), people across the country have been enamored by the magic of
+                            black-out drinking...</div>
+                    </div>
+                    <div class="science-news-preview-block flex-container">
+                        <div class="news-preview-1 flex-container">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                            <div class="side-with-news-info">
+                                <div class="news-header">Do Critics Think Jason Statham’s New Action Movie Kicks Ass?</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <div class="news-date">12 march 2013</div>
+                            </div>
                         </div>
-                        <div class="news-preview">
-                            <img src="" alt="" class="news-pic">
-                            <div class="news-header"></div>
-                            <div class="news-score"></div>
-                            <div class="news-date"></div>
+                        <div class="news-preview-2 flex-container">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                            <div class="side-with-news-info">
+                                <div class="news-header">Brad Pitt and Angelina Jolie set for May wedding</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <div class="news-date">12 march 2013</div>
+                            </div>
+                        </div>
+                        <div class="news-preview-3 flex-container">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                            <div class="side-with-news-info">
+                                <div class="news-header">Scarlett Johansson & Romain Dauriac Are Not Engaged</div>
+                                <div class="rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <div class="news-date">12 march 2013</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="right-column">
-            <div class="be-social subsection">
-                <div class="news-section-header"></div>
-                <div class="flex-container">
+        <section class="right-column flex-container">
+            <div class="be-social">
+                <div class="news-column-header">
+                    <div class="news-section-header">Be social</div>
+                    <div class="section-header-line"></div>
+                </div>
+                <div class="social flex-container">
                     <div class="social-net">
-                        <div class="icon"></div>
+                        <div class="facebook-icon"><a href="" class="social-netlink" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
                         <div class="fans">
-                            <span class="count-fans"></span>
-                            <span class="social-net-text"></span>
+                            <span class="count-fans">24215</span> </br>
+                            <span class="social-net-text">facebook fans</span>
                         </div>
                     </div>
                     <div class="social-net">
-                        <div class="icon"></div>
+                        <div class="twitter-icon"><a href="" class="social-netlink" target="_blank"><i class="fab fa-twitter"></a></i></div>
                         <div class="fans">
-                            <span class="count-fans"></span>
-                            <span class="social-net-text"></span>
+                            <span class="count-fans">14019</span> </br>
+                            <span class="social-net-text">twitter fans</span>
                         </div>
                     </div>
                     <div class="social-net">
-                        <div class="icon"></div>
+                        <div class="rss-icon"><a href="" class="social-netlink" target="_blank"><i class="fas fa-rss"></a></i></div>
                         <div class="fans">
-                            <span class="count-fans"></span>
-                            <span class="social-net-text"></span>
+                            <span class="count-fans">45221</span> </br>
+                            <span class="social-net-text">subscribers</span>
                         </div>
                     </div>
                 </div>
@@ -316,7 +485,7 @@
                 <div class="news-section-header">ADS</div>
                 <img src="./img/ads/mac.jpg" alt="" class="ads-banner">
             </div>
-            <div class="tags">
+            <div class="tags subsection">
                 <div class="news-section-header">Tags</div>
                 <div class="flex-container">
                     <div class="tag">entertainment</div>
@@ -341,112 +510,219 @@
                     <div class="tag">popular news</div>
                 </div>
             </div>
-            <div class="sorted-news-list subsection">
-                <div class="flex-container">
-                    <div class="sort-attributes">
-                        <div class="news-section-header"></div>
-                        <div class="news-section-header"></div>
-                        <div class="news-section-header"></div>
+            <div class="sorted-news flex-container">
+                    <div class="sorted-news-header">
+                        <div class="news-section-header">Latest</div>
+                        <div class="news-section-header">Popular</div>
+                        <div class="news-section-header">Commented</div>
+                        <div class="section-header-line"></div>
                     </div>
                     <div class="news-preview">
-                        <div class="news-header"></div>
+                        <div class="news-header">Do Critics Think Jason Statham’s New Action Movie Kicks Ass?</div>
                         <div class="news-info">
-                            <span class="news-date"></span>
-                            <span class="news-section"></span>
-                            <span class="news-comments"></span>
+                            <span class="news-date">12 march 2013</span>
+                            <span class="news-section">// entertainment //</span>
+                            <span class="news-comments">47 comments</span>
                         </div>
-                        <div class="news-score"></div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div> 
                     </div>
                     <div class="news-preview">
-                        <div class="news-header"></div>
+                        <div class="news-header">Brad Pitt and Angelina Jolie set for May wedding</div>
                         <div class="news-info">
-                            <span class="news-date"></span>
-                            <span class="news-section"></span>
-                            <span class="news-comments"></span>
+                            <span class="news-date">12 march 2013</span>
+                            <span class="news-section">// entertainment //</span>
+                            <span class="news-comments">47 comments</span>
                         </div>
-                        <div class="news-score"></div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div> 
                     </div>
                     <div class="news-preview">
-                        <div class="news-header"></div>
+                        <div class="news-header">Scarlett Johansson & Romain Dauriac Are Not Engaged</div>
                         <div class="news-info">
-                            <span class="news-date"></span>
-                            <span class="news-section"></span>
-                            <span class="news-comments"></span>
+                            <span class="news-date">12 march 2013</span>
+                            <span class="news-section">// entertainment //</span>
+                            <span class="news-comments">47 comments</span>
                         </div>
-                        <div class="news-score"></div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div> 
                     </div>
                     <div class="news-preview">
-                        <div class="news-header"></div>
+                        <div class="news-header">Gerard Butler: 'Olympus Has Fallen' New York Screening!</div>
                         <div class="news-info">
-                            <span class="news-date"></span>
-                            <span class="news-section"></span>
-                            <span class="news-comments"></span>
+                            <span class="news-date">12 march 2013</span>
+                            <span class="news-section">// entertainment //</span>
+                            <span class="news-comments">47 comments</span>
                         </div>
-                        <div class="news-score"></div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div> 
                     </div>
-                </div>
             </div>
         </section>
     </div>
     <footer>
         <div class="container">
-            <img src="" alt="" class="logo">
+            <div class="square"></div>
+            <div class="logo">
+                <div class="magazine-name">Rumors</div>
+                <div class="logo-text">News magazine</div>
+                <div class="logo-line"></div>
+            </div>
             <div class="rumors-info flex-container">
-                <div class="text-about-site"></div>
-                <div class="rumors-contacts flex-container">
-                    <div class="location"></div>
-                    <div class="phone"></div>
-                    <div class="email"></div>
+                <div class="text-about-site">
+                    <span class="text-1">Too many of us look upon Americans as dollar chasers. This is a cruel
+                        libel, even if it is reiterated thoughtlessly by the Americans themselves.</span>
+                    <span class="text-2">This is a cruel libel, even if it is reiterated thoughtlessly by the
+                        Americans themselves.</span>
                 </div>
             </div>
-            <div class="latest-news subsection">
-                <div class="news-section-header"></div>
-                <div class="flex-container">
-                    <div class="news-preview">
-                        <img src="" alt="" class="news-pic">
-                        <div class="news-date"></div>
-                        <div class="news-header"></div>
-                        <div class="news-score"></div>
+            <div class="rumors-contacts flex-container">
+                <div class="location">
+                    <img src="./img/footer/location.png" alt="" class="location-img">
+                    <span class="location-text">Salt Lake City, UT 87234</span>
+                </div>
+                <div class="phone">
+                    <img src="./img/footer/phone.png" alt="" class="phone-img">
+                    <span class="phone-text">(871) 321-6567</span>
+                </div>
+                <div class="email">
+                    <img src="./img/footer/email.png" alt="" class="email-img">
+                    <span class="email-text">awesome@website.com</span>
+                </div>
+            </div>
+            <div class="latest-news">
+                <div class="news-section-header">Latest News</div>
+                <div class="latest-news-block flex-container">
+                    <div class="news-preview-1 flex-container">
+                        <div class="side-with-img">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                        </div>
+                        <div class="side-with-news-info">
+                            <div class="news-header">Do Critics Think Jason Statham’s New Action Movie Kicks Ass?</div>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <div class="news-date">12 march 2013</div>
+                        </div>
                     </div>
-                    <div class="news-preview">
-                        <img src="" alt="" class="news-pic">
-                        <div class="news-date"></div>
-                        <div class="news-header"></div>
-                        <div class="news-score"></div>
+                    <div class="news-preview-2 flex-container">
+                        <div class="side-with-img">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                        </div>
+                        <div class="side-with-news-info">
+                            <div class="news-header">Brad Pitt and Angelina Jolie set for May wedding</div>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <div class="news-date">12 march 2013</div>
+                        </div>
                     </div>
-                    <div class="news-preview">
-                        <img src="" alt="" class="news-pic">
-                        <div class="news-date"></div>
-                        <div class="news-header"></div>
-                        <div class="news-score"></div>
+                    <div class="news-preview-3 flex-container">
+                        <div class="side-with-img">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                        </div>
+                        <div class="side-with-news-info">
+                            <div class="news-header">Scarlett Johansson & Romain Dauriac Are Not Engaged</div>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <div class="news-date">12 march 2013</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="most-popular-news subsection">
-                <div class="news-section-header"></div>
-                <div class="flex-container">
-                    <div class="news-preview">
-                        <img src="" alt="" class="news-pic">
-                        <div class="news-date"></div>
-                        <div class="news-header"></div>
-                        <div class="news-score"></div>
+            <div class="most-popular-news">
+                <div class="news-section-header">most popular</div>
+                <div class="most-popular-news-block flex-container">
+                    <div class="news-preview-1 flex-container">
+                        <div class="side-with-img">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                        </div>
+                        <div class="side-with-news-info">
+                            <div class="news-header">Do Critics Think Jason Statham’s New Action Movie Kicks Ass?</div>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <div class="news-date">12 march 2013</div>
+                        </div>
                     </div>
-                    <div class="news-preview">
-                        <img src="" alt="" class="news-pic">
-                        <div class="news-date"></div>
-                        <div class="news-header"></div>
-                        <div class="news-score"></div>
+                    <div class="news-preview-2 flex-container">
+                        <div class="side-with-img">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                        </div>
+                        <div class="side-with-news-info">
+                            <div class="news-header">Gerard Butler: 'Olympus Has Fallen' New York Screening!</div>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <div class="news-date">12 march 2013</div>
+                        </div>
                     </div>
-                    <div class="news-preview">
-                        <img src="" alt="" class="news-pic">
-                        <div class="news-date"></div>
-                        <div class="news-header"></div>
-                        <div class="news-score"></div>
+                    <div class="news-preview-3 flex-container">
+                        <div class="side-with-img">
+                            <img src="./img/entertainment/aniston.jpg" alt="Aniston" class="news-pic">
+                        </div>
+                        <div class="side-with-news-info">
+                            <div class="news-header">Sexy Penelope Cruz Wears A Black Leather Coat Dress In Rome</div>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <div class="news-date">12 march 2013</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright"></div>
+            <div class="copyright flex-container">
+                <span class="text-1">Copyright 2013 @</span>
+                <span class="text-2">RUMORS.</span>
+                <span class="text-3">// A mega awesome NEWS MAGAZINE theme.</span>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
