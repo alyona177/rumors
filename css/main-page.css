@@ -66,6 +66,10 @@
           flex-direction: column;
 }
 
+header {
+  margin-bottom: 26px;
+}
+
 header .container {
   position: relative;
 }
@@ -74,7 +78,7 @@ header .container:before {
   content: "";
   position: absolute;
   height: 27px;
-  width: 1px;
+  width: 2px;
   background-color: #ffb400;
   left: 5px;
   top: 0px;
@@ -89,19 +93,14 @@ header .container:after {
   bottom: 17px;
 }
 
-header .flex-container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 header .logo {
   text-align: center;
   background-image: url(../img/header/logo-bg.png);
   background-size: cover;
   color: white;
-  margin: 27px 10px 12px 0;
-  padding: 18px 17px 18px 16px;
+  margin-top: 27px;
+  margin-right: 35px;
+  padding: 24px 17px 16px 16px;
   position: relative;
   z-index: 0;
 }
@@ -113,7 +112,7 @@ header .magazine-name {
   letter-spacing: -4.75px;
   text-transform: uppercase;
   line-height: 69px;
-  margin: 22px 18px 10px;
+  margin-bottom: 8px;
 }
 
 header .logo-text {
@@ -141,8 +140,18 @@ header .logo-line {
 }
 
 header .link-container {
-  padding: 103px 14px 0px 14px;
   position: relative;
+}
+
+header nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 54px;
+  width: 100%;
 }
 
 header .nav-link {
@@ -156,16 +165,18 @@ header .nav-link {
   letter-spacing: -0.38px;
 }
 
+header .nav-link:hover {
+  color: #ffb400;
+}
+
 header .current-section::after {
   content: "";
   background-color: #ffb400;
   position: absolute;
-  width: 100%;
-  height: 98%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 128px;
+  height: 170px;
+  top: -105px;
+  left: -10px;
   z-index: -1;
 }
 
@@ -173,13 +184,10 @@ header .current-section::before {
   content: "";
   background-color: #e4a40b;
   position: absolute;
-  width: 95%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
+  width: 119px;
+  height: 4px;
+  top: 65px;
+  left: -6px;
   z-index: -1;
 }
 
@@ -187,8 +195,11 @@ header .current-section .nav-link {
   color: white;
 }
 
+header .current-section .nav-link:hover {
+  color: #444444;
+}
+
 header .search {
-  padding: 90px 10px 0px 10px;
   position: relative;
 }
 
@@ -208,8 +219,7 @@ header .search-field:focus {
 
 header .search-icon {
   position: absolute;
-  right: 10px;
-  top: 90px;
+  right: 0;
 }
 
 .slider {
