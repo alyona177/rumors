@@ -453,8 +453,24 @@ header {
             border-bottom: 0;
         }
 
+        .hover-header{
+            text-transform: uppercase;
+            position:absolute;
+            bottom: 20px;
+
+            width: 86px;
+            height: 9px;
+            font-family: TitilliumText25L-600wt;
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: -0.3px;
+            text-align: center;
+            color: #ffffff;
+        }
+
         .side-with-img {
-            width: 108px;
+            width: 158px;
+            height: 85px;
             flex-shrink: 0;
             margin-right: 13px;
         }

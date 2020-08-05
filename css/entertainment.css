@@ -480,8 +480,23 @@ header .search-icon {
   border-bottom: 0;
 }
 
+.news-column .news-preview .hover-header {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  width: 86px;
+  height: 9px;
+  font-family: TitilliumText25L-600wt;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .news-column .news-preview .side-with-img {
-  width: 108px;
+  width: 158px;
+  height: 85px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 13px;
