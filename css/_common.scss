@@ -378,6 +378,10 @@ header {
                 letter-spacing: -0.3px;
                 text-align: left;
                 color: #ffffff;
+
+                &:hover {
+                    color: #ffb400;
+                }
             }
 
             .news-comments, .news-date {
@@ -504,22 +508,19 @@ header {
         justify-content: space-between;
     }
 
-    .facebook-icon, .rss-icon{
+    .net-icon {
         width: 102px;
         height: 73px;
         background-color: #535353;
         color: white;
         border: 1px solid #535353;
         padding: 20px 0px 0px 38px;
-    }
+        cursor: pointer;
 
-    .twitter-icon {
-        width: 102px;
-        height: 73px;
-        background-color: #ffb400;
-        color: white;
-        border: 1px solid #ffb400;
-        padding: 20px 0px 0px 38px;
+        &:hover {
+            background-color: #ffb400;
+            border: 1px solid #ffb400;
+        }
     }
 
     .fans {

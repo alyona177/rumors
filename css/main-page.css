@@ -407,6 +407,10 @@ header .search-icon {
   color: #ffffff;
 }
 
+.slider-news .slider-news-preview .news-header:hover {
+  color: #ffb400;
+}
+
 .slider-news .slider-news-preview .news-comments, .slider-news .slider-news-preview .news-date {
   font-size: 11px;
   letter-spacing: -0.28px;
@@ -532,22 +536,19 @@ header .search-icon {
           justify-content: space-between;
 }
 
-.be-social .facebook-icon, .be-social .rss-icon {
+.be-social .net-icon {
   width: 102px;
   height: 73px;
   background-color: #535353;
   color: white;
   border: 1px solid #535353;
   padding: 20px 0px 0px 38px;
+  cursor: pointer;
 }
 
-.be-social .twitter-icon {
-  width: 102px;
-  height: 73px;
+.be-social .net-icon:hover {
   background-color: #ffb400;
-  color: white;
   border: 1px solid #ffb400;
-  padding: 20px 0px 0px 38px;
 }
 
 .be-social .fans {
