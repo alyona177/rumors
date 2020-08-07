@@ -60,11 +60,6 @@
     display: grid;
 }
 
-.right-column {
-    width: 340px;
-    flex-shrink:0;
-    flex-direction: column;
-}
 
 header {
     margin-bottom: 26px;
@@ -145,7 +140,7 @@ header {
         align-items: center;
         justify-content: space-between;
         margin-top: 54px;
-        width: 100%;
+        flex-grow: 1;
     }
 
     .nav-link {
@@ -201,7 +196,8 @@ header {
         height: 41px;
         font-family: "Titillium Web";
         font-size: 12px;
-        padding: 17px 0 15px 13px;
+        line-height: 41px;
+        padding-left: 13px;
         background: rgb(240, 240, 240);
         border: none;
 
@@ -1076,6 +1072,104 @@ footer {
                 font-size: 12px;
                 color: #5f5f5f;
             }
+        }
+    }
+}
+
+
+@media(min-width: 1500px) {
+    .container {
+         max-width:1500px;
+    }
+}
+
+
+@media(min-width: 901px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+@media(max-width: 1200px) {
+    header .logo {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 900px) {
+    .desktop-only {
+        display: none !important;
+    }
+    
+    header {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        margin:0;
+        height: 60px;
+        padding: 0 10px;
+        .magazine-name {
+            color: #ffb400;
+            font-size: 40px;
+            line-height: 1;
+            margin:0;
+            padding:0;
+            letter-spacing: -2px;
+        }
+
+        .logo {
+           background-image: none;
+           margin: 0;
+           padding: 0;
+        }
+
+        .container {
+
+            &:after, &:before {
+                display: none;
+            }
+            margin: 0;
+        }
+    }
+
+    nav.mobile-only {
+        position: absolute;
+        top:0;
+        left: 30px;
+        margin:0;
+        background-color: rgba(68,68,68,0.8);
+        transform: translateX(-130%);
+        transition: all .3s ease-in-out;
+        z-index:1;
+
+        &.shown {
+            transform: translateX(0%);
+            transform: translateY(0%);
+        }
+
+        .nav-link {
+            font-size: 14px;
+            color: white;
+            line-height:0.7;
+        }
+    }
+
+    .search {
+        .search-field {    
+            height: 20px;
+            position: absolute;
+            right:0;
+            bottom: 4px;
+            width: 150px;
+            font-size: 10px;
+            transform: translateY(-200%);
+        }
+
+        .search-icon {
+            height: 20px;
+            position: relative;
         }
     }
 }

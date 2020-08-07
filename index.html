@@ -11,13 +11,14 @@
 
 <body>
     <header>
+        <button class="burger-btn mobile-only"><i class="fas fa-bars"></i></button>
         <div class="container flex-container">
             <div class="logo">
                 <div class="magazine-name">Rumors</div>
-                <div class="logo-text">News magazine</div>
-                <div class="logo-line"></div>
+                <div class="logo-text desktop-only">News magazine</div>
+                <div class="logo-line desktop-only"></div>
             </div>
-            <nav class="flex-container">
+            <nav class="flex-container desktop-only">
                 <div class="link-container">
                     <a href="" class="nav-link" target="_blank">World</a>
                 </div>
@@ -44,6 +45,35 @@
                     <img src="./img/header/search-icon.png" class="search-icon" alt="">
                 </div>
             </nav>
+        </div>
+        
+       
+        <nav class="mobile-only">
+            <div class="link-container">
+                <a href="" class="nav-link" target="_blank">World</a>
+            </div>
+            <div class="link-container">
+                <a href="" class="nav-link" target="_blank">Business</a>
+            </div>
+            <div class="link-container">
+                <a href="" class="nav-link" target="_blank">Entertainment</a>
+            </div>
+            <div class="link-container">
+                <a href="" class="nav-link" target="_blank">Sports</a>
+            </div>
+            <div class="link-container">
+                <a href="" class="nav-link" target="_blank">Science</a>
+            </div>
+            <div class="link-container">
+                <a href="" class="nav-link" target="_blank">Health</a>
+            </div>
+            <div class="link-container">
+                <a href="" class="nav-link" target="_blank">Spotlight</a>
+            </div>
+        </nav>
+        <div class="search mobile-only">
+            <input type="text" class="search-field" placeholder="Search rumors...">
+            <img src="./img/header/search-icon.png" class="search-icon" alt="">
         </div>
     </header>
     <section class="slider">
