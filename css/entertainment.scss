@@ -1,16 +1,19 @@
 @import "common";
-.left-column {
-    width: 717px;
-    flex-shrink: 0;
-}
 
 .left-column {
     margin-right: 30px;
-
+    width: 717px;
+    flex-grow:1;
     .top-part {
-        grid-template: 1fr 1fr / 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 30px;
     }
+}
+
+.right-column {
+    width: 340px;
+    flex-direction: column;
 }
 
 .subsection {
@@ -423,4 +426,12 @@
             }
         }
     }    
+}
+
+@media(max-width: 900px) {
+    .left-column {
+        .top-part {
+            display: block;
+        }
+    }
 }

@@ -56,16 +56,6 @@
   display: grid;
 }
 
-.right-column {
-  width: 340px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 header {
   margin-bottom: 26px;
 }
@@ -91,6 +81,7 @@ header .container:after {
   width: 100%;
   background-color: #ffb400;
   bottom: 17px;
+  z-index: -1;
 }
 
 header .logo {
@@ -151,7 +142,9 @@ header nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 54px;
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 header .nav-link {
@@ -208,7 +201,8 @@ header .search-field {
   height: 41px;
   font-family: "Titillium Web";
   font-size: 12px;
-  padding: 17px 0 15px 13px;
+  line-height: 41px;
+  padding-left: 13px;
   background: #f0f0f0;
   border: none;
 }
@@ -220,6 +214,8 @@ header .search-field:focus {
 header .search-icon {
   position: absolute;
   right: 0;
+  display: block;
+  top: 0;
 }
 
 .slider {
@@ -1144,21 +1140,133 @@ footer .container .copyright .text-3 {
   color: #5f5f5f;
 }
 
-.left-column {
-  width: 717px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  header .logo {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .desktop-only {
+    display: none !important;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    height: 60px;
+    padding: 0 5%;
+  }
+  header .magazine-name {
+    color: #ffb400;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -2px;
+  }
+  header .logo {
+    background-image: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .container {
+    margin: 0;
+  }
+  header .container:after, header .container:before {
+    display: none;
+  }
+  .burger-btn {
+    padding: 2px 5px;
+    background-color: #dddddd;
+    border: none;
+    color: #a5a5a5;
+    outline: none;
+  }
+  nav.mobile-only {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    margin: 0;
+    background-color: rgba(68, 68, 68, 0.8);
+    -webkit-transform: translateX(-130%);
+            transform: translateX(-130%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+  }
+  nav.mobile-only.shown {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  nav.mobile-only .nav-link {
+    font-size: 14px;
+    color: white;
+    line-height: 0.7;
+  }
+  .search .search-field {
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    width: 150px;
+    font-size: 10px;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  .search .search-icon {
+    height: 20px;
+    position: relative;
+  }
 }
 
 .left-column {
   margin-right: 30px;
+  width: 717px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .left-column .top-part {
-  -ms-grid-rows: 1fr 1fr;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template: 1fr 1fr / 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
+}
+
+.right-column {
+  width: 340px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .subsection {
@@ -1589,5 +1697,11 @@ footer .container .copyright .text-3 {
 
 .bottom-part .science-block .science-news-preview-block .news-preview-3 .news-date {
   margin-left: 14px;
+}
+
+@media (max-width: 900px) {
+  .left-column .top-part {
+    display: block;
+  }
 }
 /*# sourceMappingURL=entertainment.css.map */
