@@ -81,6 +81,7 @@ header .container:after {
   width: 100%;
   background-color: #ffb400;
   bottom: 17px;
+  z-index: -1;
 }
 
 header .logo {
@@ -213,6 +214,8 @@ header .search-field:focus {
 header .search-icon {
   position: absolute;
   right: 0;
+  display: block;
+  top: 0;
 }
 
 .slider {
@@ -1175,7 +1178,7 @@ footer .container .copyright .text-3 {
             align-items: center;
     margin: 0;
     height: 60px;
-    padding: 0 10px;
+    padding: 0 5%;
   }
   header .magazine-name {
     color: #ffb400;
@@ -1195,6 +1198,13 @@ footer .container .copyright .text-3 {
   }
   header .container:after, header .container:before {
     display: none;
+  }
+  .burger-btn {
+    padding: 2px 5px;
+    background-color: #dddddd;
+    border: none;
+    color: #a5a5a5;
+    outline: none;
   }
   nav.mobile-only {
     position: absolute;
@@ -1244,9 +1254,10 @@ footer .container .copyright .text-3 {
 }
 
 .left-column .top-part {
-  -ms-grid-rows: 1fr 1fr;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template: 1fr 1fr / 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
 }
 
@@ -1256,9 +1267,6 @@ footer .container .copyright .text-3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .subsection {
@@ -1689,5 +1697,11 @@ footer .container .copyright .text-3 {
 
 .bottom-part .science-block .science-news-preview-block .news-preview-3 .news-date {
   margin-left: 14px;
+}
+
+@media (max-width: 900px) {
+  .left-column .top-part {
+    display: block;
+  }
 }
 /*# sourceMappingURL=entertainment.css.map */

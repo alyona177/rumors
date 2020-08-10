@@ -83,6 +83,7 @@ header {
             width: 100%;
             background-color: #ffb400;
             bottom: 17px;
+            z-index: -1;
         }
     }
 
@@ -209,6 +210,8 @@ header {
     .search-icon {
         position: absolute;
         right: 0;
+        display: block;
+        top: 0;
     }
 }
 
@@ -1109,7 +1112,7 @@ footer {
         align-items: center;
         margin:0;
         height: 60px;
-        padding: 0 10px;
+        padding: 0 5%;
         .magazine-name {
             color: #ffb400;
             font-size: 40px;
@@ -1132,6 +1135,14 @@ footer {
             }
             margin: 0;
         }
+    }
+
+    .burger-btn {
+        padding: 2px 5px;
+        background-color: rgb(221,221,221);
+        border: none;
+        color: rgb(165,165,165);
+        outline: none;
     }
 
     nav.mobile-only {
